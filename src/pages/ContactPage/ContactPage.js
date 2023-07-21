@@ -1,32 +1,14 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React from "react";
 import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import { contactJumbo } from "./ContactJumbo";
-import { HashLink as Link } from "react-router-hash-link";
+
 import printEmail from "../../components/EmailRevealer/EmailRevealer";
 import "./ContactPage.css";
+import ContactFormRender from "../../components/ContactForm/ContactFormRender";
+
 
 function ContactPage() {
-  const serviceID = "service_yof2mek";
-  const templateID = "template_kh3a3ek";
-  const publicKey = "4MtM6JCBoDqXoTUpX";
-  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(serviceID, templateID, form.current, publicKey)
-
-      .then(
-        (result) => {
-          console.log(result);
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
-  };
 
   return (
     <>
@@ -84,58 +66,8 @@ function ContactPage() {
         </span>
         <br />
 
-        <div id="formWrapper">
-          <form ref={form} onSubmit={sendEmail}>
-            <h2>Leave me a message and I'll come back to you ASAP</h2>
-            <hr />
+        <ContactFormRender />
 
-            <fieldset id="formArea">
-              <div id="formEntry">
-                <label className="userContactInfo">
-                  <p>Your Name</p>
-                  <input name="user_name" />
-                </label>
-
-                <label className="userContactInfo">
-                  <p>Your Email</p>
-                  <input name="user_email" />
-                </label>
-
-                <label className="userContactInfo">
-                  <p>Your Phone Number</p>
-                  <input name="user_phone" />
-                </label>
-              </div>
-              <label id="messageContainer">
-                <p>What's your message?</p>
-                <textarea name="message" />
-              </label>
-            </fieldset>
-
-            <p>
-              Please note that by submitting this form you agree to be contacted
-              by phone / email and agree that your data will be managed
-              according to the{" "}
-              <Link
-                to="/privacy-policy/#"
-                target="_blank"
-                className="linkOnPurple"
-              >
-                Privacy Policy
-              </Link>
-            </p>
-
-            <div>
-              <button
-                id="submitButton"
-                type="submit"
-                className="onPurpleButton"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
       </div>
     </>
   );

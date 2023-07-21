@@ -378,31 +378,38 @@ span button {
 
 /* Loading button animation] */
 
-#submitButton {
-    font-size: 30px;
-  }
+.sendingMessage {
+    pointer-events: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    background-color: var(--brandYellow);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
-  .submitButton:after {
-    content: "\2026"; /* ascii code for the ellipsis character */
-    width: 0px;
-    animation: ellipsis 900ms infinite;
+.dot-carousel {
+    margin: auto;
+    position: relative;
+    left: -9999px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #9880ff;
+    color: #9880ff;
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+    animation: dot-carousel 1.5s infinite linear;
   }
-
-  @keyframes ellipsis {
+  
+  @keyframes dot-carousel {
     0% {
-      width: 0px;
-    }
-    25% {
-      width: 0.375em;
+      box-shadow: 9984px 0 0 -1px #9880ff, 9999px 0 0 1px #9880ff, 10014px 0 0 -1px #9880ff;
     }
     50% {
-      width: 0.75em;
-    }
-    75% {
-      width: 1.125em;
+      box-shadow: 10014px 0 0 -1px #9880ff, 9984px 0 0 -1px #9880ff, 9999px 0 0 1px #9880ff;
     }
     100% {
-      width: 1.25em;
+      box-shadow: 9999px 0 0 1px #9880ff, 10014px 0 0 -1px #9880ff, 9984px 0 0 -1px #9880ff;
     }
   }
 
