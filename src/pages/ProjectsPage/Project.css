@@ -1,0 +1,18 @@
+/* Additional text stylings on page */
+
+a {
+    text-decoration: none;
+}
+
+.gitLink {
+    color: white !important;
+    text-decoration: underline;
+}
+
+small {
+    color: white;
+}
+
+li .bi {
+    color: aliceblue;
+}

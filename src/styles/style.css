@@ -1,0 +1,409 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --transparentBackground: rgba(255, 255, 255, 0.65);
+    --brandColor: rgba(69, 9, 116,1);
+    --brandColorLight: rgba(69, 9, 116,0.95);
+    --brandColorTextbox: #f1e2fd;
+    --tabletSpaceBetweenElements: 25px;
+    --titleBackground: rgba(69, 9, 116,0.8);
+    --transparentWork: rgba(000, 000, 000, 0.8);
+    --linkShadow: 2px 2px rgba(000,000,000, .55);
+    --bigBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4) !important;
+    --brandYellow: #F5D807;
+    --brandYellowHover: #E4D77A;
+}
+
+/* Text Styles */
+
+p {
+    font-size: 16px;
+}
+
+small {
+    color: black;
+    font-size: large;
+}
+
+h1 {
+    font-size: 32px;
+    color: var(--brandColor);
+}
+
+.linkOnPurple {
+    color: var(--brandYellow) !important;
+    text-decoration: underline;
+}
+
+.linkOnPurple:hover {
+    color: var(--brandYellowHover) !important;
+    text-decoration: underline;
+}
+
+/* Button Style */
+
+.onPurpleButton{
+
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    border-color: var(--brandColor);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+
+.onPurpleButton:hover {
+    transition: 0.25s;
+    background-color: var(--brandYellow);
+
+}
+
+.btn-primary {
+    border-color: var(--brandColor);
+    background-color: transparent;
+    color: var(--brandColor);
+}
+
+.btn-primary:hover {
+    border-color: black;
+    transition: 0.5s;
+    background-color: var(--brandColor);
+    color: white !important;
+    box-shadow: var(--linkShadow);
+}
+
+/* Project Button Style */
+
+.btn-project {
+    border-color: var(--brandColor);
+    margin: 10px 0 10px 0;
+    background-color: lightblue;
+    color: var(--brandColor);
+}
+
+.btn-project:hover {
+    border-color: black;
+    transition: 0.5s;
+    color: green !important;
+    box-shadow: var(--linkShadow);
+}
+
+/* Nav Bar */
+
+#logoImg {
+    height: 75px;
+}
+
+#mobile {
+    text-align: end;
+}
+
+li {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+
+a {
+    color: var(--brandColor) !important;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    color: black !important;
+    transition: 0.5s;
+}
+
+.dropdown-menu {
+    background-color: var(--brandColor);
+}
+
+.btn-primary {
+    border-color: var(--brandColor);
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    z-index: 100;
+    width: 100%;
+    padding: 0px;
+    background-image: linear-gradient(to top,
+    rgba(255,255,255,0.3),
+    rgba(255,255,255,1));
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin: 0px 15px;
+}
+
+.nav-link:hover {
+    border-color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: var(--brandColor);
+    color: white !important;
+    box-shadow: var(--linkShadow);
+}
+
+.navbar-expand-lg {
+    align-items: flex-start;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+/* Hero Section (Jumbotron) */
+
+.jumbotron {
+    height: 50vh;
+    background-image: url(../../public/assets/images/desktop-hero-rob-hiking-sunset.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 25px;
+    box-shadow: var(--bigBoxShadow);
+}
+
+.jumboCopy {
+    padding: 10px;
+    display: flex;
+    background-color: var(--transparentBackground);
+    flex-wrap: wrap;
+    text-align: left;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+/* work Section */
+
+.work-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 65vh;
+    box-shadow: var(--bigBoxShadow);
+}
+
+.work-ul {
+    background-color: var(--transparentWork);
+    flex-wrap: wrap-reverse;
+    justify-content: left;
+
+}
+
+.h3-portfolio {
+    text-align: center;
+    background-color: var(--titleBackground);
+    color: white;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+#card-description {
+    text-align: center;
+    background-color: var(--titleBackground);
+    color: white;
+    padding: 5px;
+}
+
+#card-description p {
+    font-size: 14px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.mb-4 {
+    margin-bottom: 0 !important;
+}
+
+/* Icon Colour */
+
+.bi {
+    color: var(--brandColor);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Animation for little platform icons in work section */
+
+.animate-icon {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+    60% {
+		transform: scale(1.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Contact section */
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#about-me p {
+    width: 60%;
+    margin: 10px;
+}
+
+.about-btn {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+/* Footer Styles */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--brandColor);
+    padding: 25px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    border: 1px solid white;
+    margin-bottom: var(--tabletSpaceBetweenElements);
+}
+
+.footer-nav {
+    color: var(--brandYellow) !important;
+    text-decoration: underline;
+}
+
+.footer-nav:hover {
+
+    background-color: white;
+    text-decoration: underline;
+    color: black !important;
+    box-shadow: 2px 2px rgba(000,000,000,.5);
+}
+
+footer img:hover {
+    transition: 1s;
+    transform: scale(1.25);
+    box-shadow: 5px 10px rgba(000,000,000,.5);
+}
+
+@media screen and (max-width:480px)
+
+{
+    /* Prevents jumbo copy from overlappging header on smaller screens */
+
+    .jumbotron {
+        height: 55vh;
+        background-position: right;
+    }
+
+    .jumboCopy {
+        width: 100%
+    }
+
+    /* Allows main portfolio card to adjust height to contain content automtically */
+
+    .portfolio-height {
+        height: auto;
+    }
+
+    /* Card description copy width is increased to improve appearance on smaller and lower resolution devices */
+
+    #card-description p {
+        width: 95%;
+    }
+
+    /* Increases the width of the container for the paragraph of about me text */
+    
+    #about-me p {
+        width: 95%;
+    }
+}
+
+span button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Mobile Screens */
+
+@media only screen and (max-width: 480px ) {
+    h1{
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Loading button animation] */
+
+#submitButton {
+    font-size: 30px;
+  }
+
+  .submitButton:after {
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+    animation: ellipsis 900ms infinite;
+  }
+
+  @keyframes ellipsis {
+    0% {
+      width: 0px;
+    }
+    25% {
+      width: 0.375em;
+    }
+    50% {
+      width: 0.75em;
+    }
+    75% {
+      width: 1.125em;
+    }
+    100% {
+      width: 1.25em;
+    }
+  }
+
+  /* End */
