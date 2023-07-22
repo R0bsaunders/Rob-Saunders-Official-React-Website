@@ -40,22 +40,35 @@ export default function ContactForm() {
     };
   };
 
+  // Check that all fields have been entered so that a blank message is not sent
+
+  function formFieldValidation() {
+    
+    if (
+      userName.trim() === "" ||
+      userEmail.trim() === "" ||
+      userMessage.trim() === ""
+      ){
+      
+        return false
+
+    };
+  };
+
+
   // Email submission handler
 	const sendEmail = (e) => {
+
 		e.preventDefault();
 
-    console.log("Name: " + userName)
-    console.log("Email: " + userEmail)
-    console.log("Phone: " + userPhone)
-    console.log("Message: " + userMessage)
+    // Check to see if any of the fields are blank (not including phone which is not mandatory)
+    if(formFieldValidation() === false) {
+      alert(`There are problems here`);
+      return
 
-
+    } else {
 
 		setButtonText(1);
-
-
-
-
 
 		emailjs
     .sendForm(serviceID, templateID, form.current, publicKey)
@@ -83,6 +96,7 @@ export default function ContactForm() {
         }, 5000);
       }
     );
+    }
 	};
 
   // Check to see what state the form is in and render the form dependent on it
