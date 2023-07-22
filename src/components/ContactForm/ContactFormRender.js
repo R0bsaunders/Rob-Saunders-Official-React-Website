@@ -13,6 +13,7 @@ export default function ContactForm() {
 	const [userName, setUserName] = useState("");
 	const [userEmail, setUserEmail] = useState("");
 	const [userMessage, setUserMessage] = useState("");
+  const [userPhone, setUserPhone] = useState("");
 
 	// EmailJS credentials
 	const serviceID = "service_yof2mek.";
@@ -20,15 +21,45 @@ export default function ContactForm() {
 	const publicKey = "4MtM6JCBoDqXoTUpX.";
 	const form = useRef();
 
+
+  function inputListener (event) {
+
+    if (event.target.id === 'name') {
+      setUserName(event.target.value);
+      console.log(userName)
+
+    } else if (event.target.id === 'email'){
+      setUserEmail(event.target.value);
+
+    } else if (event.target.id === 'phone') {
+      setUserPhone(event.target.value);
+
+    } else if (event.target.id === 'message') {
+      setUserMessage(event.target.value);
+
+    };
+    console.log("Name: " + userName)
+    console.log("Email: " + userEmail)
+    console.log("Phone: " + userPhone)
+    console.log("Message: " + userMessage)
+  };
+
   // Email submission handler
 	const sendEmail = (e) => {
+		e.preventDefault();
+
+    console.log("Name: " + userName)
+    console.log("Email: " + userEmail)
+    console.log("Phone: " + userPhone)
+    console.log("Message: " + userMessage)
+
 
 
 		setButtonText(1);
 
 
-    
-		e.preventDefault();
+
+
 
 		emailjs
     .sendForm(serviceID, templateID, form.current, publicKey)
@@ -77,21 +108,21 @@ export default function ContactForm() {
 							<label className="userContactInfo">
 
 								<p>{ContactFormContent.name}</p>
-								<input name="user_name" onChange={setUserName} />
+								<input id="name" name="user_name" onChange={inputListener} />
 
 							</label>
 
 							<label className="userContactInfo">
 
 								<p>{ContactFormContent.email}</p>
-								<input name="user_email" onChange={setUserEmail} />
+								<input id="email" name="user_email" onChange={inputListener} />
 
 							</label>
 
 							<label className="userContactInfo">
 
 								<p>{ContactFormContent.phone}</p>
-								<input name="user_phone" />
+								<input id="phone" name="user_phone" onChange={inputListener}/>
 
 							</label>
 						</div>
@@ -99,7 +130,7 @@ export default function ContactForm() {
 						<label id="messageContainer">
 
 							<p>{ContactFormContent.message}</p>
-							<textarea name="message" onChange={setUserMessage} />
+							<textarea id="message" name="message" onChange={inputListener} />
               
 						</label>
 					</fieldset>
