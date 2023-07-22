@@ -21,7 +21,7 @@ export default function ContactForm() {
 	const publicKey = "4MtM6JCBoDqXoTUpX.";
 	const form = useRef();
 
-
+  // Filter the text entered by the user and update the respective state
   function inputListener (event) {
 
     if (event.target.id === 'name') {
@@ -38,10 +38,6 @@ export default function ContactForm() {
       setUserMessage(event.target.value);
 
     };
-    console.log("Name: " + userName)
-    console.log("Email: " + userEmail)
-    console.log("Phone: " + userPhone)
-    console.log("Message: " + userMessage)
   };
 
   // Email submission handler
@@ -108,21 +104,21 @@ export default function ContactForm() {
 							<label className="userContactInfo">
 
 								<p>{ContactFormContent.name}</p>
-								<input id="name" name="user_name" onChange={inputListener} />
+								<input id="name" value={userName} name="user_name" onChange={inputListener} />
 
 							</label>
 
 							<label className="userContactInfo">
 
 								<p>{ContactFormContent.email}</p>
-								<input id="email" name="user_email" onChange={inputListener} />
+								<input id="email" value={userEmail} name="user_email" onChange={inputListener} />
 
 							</label>
 
 							<label className="userContactInfo">
 
 								<p>{ContactFormContent.phone}</p>
-								<input id="phone" name="user_phone" onChange={inputListener}/>
+								<input id="phone" value={userPhone} name="user_phone" onChange={inputListener}/>
 
 							</label>
 						</div>
@@ -130,7 +126,7 @@ export default function ContactForm() {
 						<label id="messageContainer">
 
 							<p>{ContactFormContent.message}</p>
-							<textarea id="message" name="message" onChange={inputListener} />
+							<textarea id="message" value={userMessage} name="message" onChange={inputListener} />
               
 						</label>
 					</fieldset>
