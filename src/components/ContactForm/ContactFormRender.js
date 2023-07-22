@@ -9,7 +9,7 @@ import { ContactFormContent } from "./FormCopy";
 
 export default function ContactForm() {
   // Error styles and messages
-  const errorStyle = 'border: 3px solid red; border-radius: 5px'
+  const errorStyle = 'border: 3px solid red; border-radius: 5px; padding: 10px;'
   const errorPlaceholder = {
     name: `* Your name here *`,
     email: `* Your email here *`,
@@ -24,9 +24,9 @@ export default function ContactForm() {
   const [userPhone, setUserPhone] = useState("");
 
 	// EmailJS credentials
-	const serviceID = "service_yof2mek";
-	const templateID = "template_kh3a3ek";
-	const publicKey = "4MtM6JCBoDqXoTUpX";
+	const serviceID = "service_yof2mek.";
+	const templateID = "template_kh3a3ek.";
+	const publicKey = "4MtM6JCBoDqXoTUpX.";
 	const form = useRef();
 
   // Filter the text entered by the user and update the respective state
@@ -114,6 +114,7 @@ export default function ContactForm() {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+    let checkBox = document.getElementById('privacy');
 
     // Check to see if any of the fields are blank (not including phone which is not mandatory)
     if(formFieldValidation() === false) {
@@ -123,6 +124,12 @@ export default function ContactForm() {
       alert(`You haven't added all of the needed information.\n\nPlease add the following:${(!userName ? `\nName` : '')}${(!userEmail ? `\nEmail` : '')}${(!userMessage ? `\nYour Message` : '')}`);
 
       return;
+
+    } else if (!checkBox.checked){
+
+      alert(`You need to tick to accept the privacy policy`);
+      let tickContainer = document.getElementById('checkContainer')
+      tickContainer.setAttribute('style', errorStyle);
 
     } else {
 
@@ -214,17 +221,26 @@ export default function ContactForm() {
 							<textarea id="message" value={userMessage} name="message" onChange={inputListener} />
               
 						</label>
-					</fieldset>
 
-					<p>Please note that by submitting this form you agree to be contacted
-						by phone / email and agree that your data will be managed according
-						to the <Link to="/privacy-policy/#" target="_blank" className="linkOnPurple">Privacy Policy</Link></p>
+            <div>
+
+              <p>I accept that by submitting this form I agree to be contacted by phone / email and agree that my data will be managed according to the <Link to="/privacy-policy/#" target="_blank" className="linkOnPurple">Privacy Policy</Link></p>
+
+              <label id="checkContainer" htmlFor="privacy">
+
+                <input className="checkbox" type="checkbox" id="privacy" name="privacy" onChange={inputListener}/>
+                I agree
+
+              </label>
+
+            </div>
+          </fieldset>
 
           <SubmitButton state={formState} />
-
-				</form>
-			</div>
-		);
+          
+        </form>
+    </div>
+  );
 
     // If the API response is OK, then display the success form
 	} else if (formState === 2) {
