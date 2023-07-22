@@ -29,14 +29,14 @@ function ContactPage() {
           </div>
 
           <div className="contactCards">
-            <a href="https://www.linkedin.com/in/r0bsaunders" target="_blank">
+            <a href="https://www.linkedin.com/in/web-developer-rob-saunders/" target="_blank">
               <img
                 src="./assets/images/linkedin-icon.png"
                 alt="LinkedIn Icon"
               />
             </a>
 
-            <a href="https://www.linkedin.com/in/r0bsaunders" target="_blank">
+            <a href="https://www.linkedin.com/in/web-developer-rob-saunders/" target="_blank">
               <p>LinkedIn</p>
             </a>
           </div>

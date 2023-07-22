@@ -10,11 +10,6 @@ import { ContactFormContent } from "./FormCopy";
 export default function ContactForm() {
   // Error styles and messages
   const errorStyle = 'border: 3px solid red; border-radius: 5px; padding: 10px;'
-  const errorPlaceholder = {
-    name: `* Your name here *`,
-    email: `* Your email here *`,
-    message: `* Your message here *`
-  }
 
   // States
 	const [formState, setFormState] = useState(0);
@@ -24,9 +19,9 @@ export default function ContactForm() {
   const [userPhone, setUserPhone] = useState("");
 
 	// EmailJS credentials
-	const serviceID = "service_yof2mek.";
-	const templateID = "template_kh3a3ek.";
-	const publicKey = "4MtM6JCBoDqXoTUpX.";
+	const serviceID = "service_yof2mek";
+	const templateID = "template_kh3a3ek";
+	const publicKey = "4MtM6JCBoDqXoTUpX";
 	const form = useRef();
 
   // Filter the text entered by the user and update the respective state
@@ -69,7 +64,7 @@ export default function ContactForm() {
 
       if (userName.trim() === "" ){
         nameStyle.setAttribute('style', errorStyle);
-        nameStyle.setAttribute('placeholder', errorPlaceholder.name);
+        nameStyle.setAttribute('placeholder', ContactFormContent.namePlaceholder);
         setUserName('');
 
       } else {
@@ -81,7 +76,7 @@ export default function ContactForm() {
 
       if (userEmail.trim() === "" ) {
         emailStyle.setAttribute('style', errorStyle);
-        emailStyle.setAttribute('placeholder', errorPlaceholder.email);
+        emailStyle.setAttribute('placeholder', ContactFormContent.emailPlaceholder);
         setUserEmail('');
 
       } else {
@@ -92,7 +87,7 @@ export default function ContactForm() {
 
       if (userMessage.trim() === "") {
         messageStyle.setAttribute('style', errorStyle);
-        messageStyle.setAttribute('placeholder', errorPlaceholder.message);
+        messageStyle.setAttribute('placeholder', ContactFormContent.messagePlaceholder);
         setUserMessage('');
 
       } else {
@@ -121,7 +116,7 @@ export default function ContactForm() {
 
 
       // This alert will tell the user which fields they need to complete and then exit the function so the user can retry
-      alert(`You haven't added all of the needed information.\n\nPlease add the following:${(!userName ? `\nName` : '')}${(!userEmail ? `\nEmail` : '')}${(!userMessage ? `\nYour Message` : '')}`);
+      alert(`You haven't added all of the needed information.\n\nPlease add the following:\n${(!userName ? `\nName` : '')}${(!userEmail ? `\nEmail` : '')}${(!userMessage ? `\nYour Message` : '')}`);
 
       return;
 
@@ -150,7 +145,10 @@ export default function ContactForm() {
             setFormState(0);
 
           }, 15000);
-
+          setUserEmail('');
+          setUserName('');
+          setUserMessage('');
+          setUserPhone('');
           console.log(result);
 
         },
@@ -237,7 +235,7 @@ export default function ContactForm() {
           </fieldset>
 
           <SubmitButton state={formState} />
-          
+
         </form>
     </div>
   );
