@@ -113,45 +113,56 @@ export default function ContactForm() {
   ******/
 
 	const sendEmail = (e) => {
-
 		e.preventDefault();
 
     // Check to see if any of the fields are blank (not including phone which is not mandatory)
     if(formFieldValidation() === false) {
-      alert(`You haven't added all of the needed information.\n\nPlease add the following:\nName\nEmail\nMessage`);
-      return
+
+
+      // This alert will tell the user which fields they need to complete and then exit the function so the user can retry
+      alert(`You haven't added all of the needed information.\n\nPlease add the following:${(!userName ? `\nName` : '')}${(!userEmail ? `\nEmail` : '')}${(!userMessage ? `\nYour Message` : '')}`);
+
+      return;
 
     } else {
 
-		setFormState(1);
+      // Set the form to state '1' so that the loading button will appear
+      setFormState(1);
 
-		emailjs
-    .sendForm(serviceID, templateID, form.current, publicKey)
-    .then(
-      (result) => {
+      emailjs
+      .sendForm(serviceID, templateID, form.current, publicKey)
+      .then(
+        (result) => {
 
-        setFormState(2);
-        setTimeout(() => {
+          // Set the form state to '2' so that the success message appears
+          setFormState(2);
 
-          setFormState(0);
+          // This timeout ensures the success message form is changed back to the default after the specified time passes
+          setTimeout(() => {
 
-        }, 15000);
+            setFormState(0);
 
-        console.log(result);
+          }, 15000);
 
-      },
-      (error) => {
+          console.log(result);
 
-        console.log(error);
-        setFormState(3);
-        setTimeout(() => {
+        },
+        (error) => {
 
-          setFormState(0);
+          console.log(error);
 
-        }, 5000);
-      }
-    );
-    }
+          // Set the form state to '3' so that the error message appears
+          setFormState(3);
+
+          // This timeout ensures the error message form is changed back to the default after the specified time passes
+          setTimeout(() => {
+
+            setFormState(0);
+
+          }, 5000);
+        }
+      );
+    };
 	};
 
   /* *****
