@@ -5,169 +5,133 @@ import { HashLink as Link } from "react-router-hash-link";
 import SubmittedForm from "./SubmittedForm";
 import ErrorForm from "./ErrorForm";
 import SubmitButton from "./SubmitButton/SubmitButton";
+import { ContactFormContent } from "./FormCopy";
 
-export default function ContactForm () {
-    const [buttonText, setButtonText] = useState(0)
+export default function ContactForm() {
+  // States
+	const [buttonText, setButtonText] = useState(0);
+	const [userName, setUserName] = useState("");
+	const [userEmail, setUserEmail] = useState("");
+	const [userMessage, setUserMessage] = useState("");
 
-    const serviceID = "service_yof2mek";
-    const templateID = "template_kh3a3ek";
-    const publicKey = "4MtM6JCBoDqXoTUpX";
-    const form = useRef();
+	// EmailJS credentials
+	const serviceID = "service_yof2mek.";
+	const templateID = "template_kh3a3ek.";
+	const publicKey = "4MtM6JCBoDqXoTUpX.";
+	const form = useRef();
 
-    const sendEmail = (e) => {
-      setButtonText(1);
-    e.preventDefault();
-
-    emailjs
-        .sendForm(serviceID, templateID, form.current, publicKey)
-
-        .then(
-        (result) => {
-          setButtonText(2);
-            console.log(result);
-        },
-        (error) => {
-          setButtonText(3);
-            console.log(error);
-
-            setTimeout(() => {
-              setButtonText(0);
-
-            }, 5000);
+  // Email submission handler
+	const sendEmail = (e) => {
 
 
-        }
-        );
-    };
+		setButtonText(1);
+
 
     
-    return (
+		e.preventDefault();
 
-      showForm()
-    )
-    // 0 is the initial loading state
-    // 1 is the waiting for error/success
-    // 2 is success
-    // 3 is the error
-    
-    function showForm() {
-      
-      // Check to see what state it is in
+		emailjs
+    .sendForm(serviceID, templateID, form.current, publicKey)
+    .then(
+      (result) => {
 
-        if (buttonText === 0) {
-            // Load the standard form ready for completion
+        setButtonText(2);
+        setTimeout(() => {
 
-            return(
-              <div id="formWrapper">
-              <form ref={form} onSubmit={sendEmail}>
-                <h2>Leave me a message and I'll come back to you ASAP</h2>
-                <hr />
-            
-                <fieldset id="formArea">
-                  <div id="formEntry">
-                    <label className="userContactInfo">
-                      <p>Your Name</p>
-                      <input name="user_name" />
-                    </label>
-            
-                    <label className="userContactInfo">
-                      <p>Your Email</p>
-                      <input name="user_email" />
-                    </label>
-            
-                    <label className="userContactInfo">
-                      <p>Your Phone Number</p>
-                      <input name="user_phone" />
-                    </label>
-                  </div>
-                  <label id="messageContainer">
-                    <p>What's your message?</p>
-                    <textarea name="message" />
-                  </label>
-                </fieldset>
-            
-                <p>
-                  Please note that by submitting this form you agree to be contacted
-                  by phone / email and agree that your data will be managed
-                  according to the{" "}
-                  <Link
-                    to="/privacy-policy/#"
-                    target="_blank"
-                    className="linkOnPurple"
-                  >
-                    Privacy Policy
-                  </Link>
-                </p>
-            
-                <div>
-                  <SubmitButton state={buttonText} />
-                </div>
-              </form>
-            </div>
-            );
+          setButtonText(0);
 
-          // If it's waiting to check for success, load the below
-          } else if (buttonText === 1) {
+        }, 15000);
 
-            return(
-              <div id="formWrapper">
-              <form ref={form} onSubmit={sendEmail}>
-                <h2>Leave me a message and I'll come back to you ASAP</h2>
-                <hr />
-            
-                <fieldset id="formArea">
-                  <div id="formEntry">
-                    <label className="userContactInfo">
-                      <p>Your Name</p>
-                      <input name="user_name" />
-                    </label>
-            
-                    <label className="userContactInfo">
-                      <p>Your Email</p>
-                      <input name="user_email" />
-                    </label>
-            
-                    <label className="userContactInfo">
-                      <p>Your Phone Number</p>
-                      <input name="user_phone" />
-                    </label>
-                  </div>
-                  <label id="messageContainer">
-                    <p>What's your message?</p>
-                    <textarea name="message" />
-                  </label>
-                </fieldset>
-            
-                <p>
-                  Please note that by submitting this form you agree to be contacted
-                  by phone / email and agree that your data will be managed
-                  according to the{" "}
-                  <Link
-                    to="/privacy-policy/#"
-                    target="_blank"
-                    className="linkOnPurple"
-                  >
-                    Privacy Policy
-                  </Link>
-                </p>
-            
-                <div>
-                <SubmitButton state={buttonText} />
-                </div>
-              </form>
-            </div>
-            );
-        } else if (buttonText === 2) {
+        console.log(result);
 
-          return (
-            <SubmittedForm />
-          );
+      },
+      (error) => {
 
-        } else {
-          return (
-          <ErrorForm />
-        );};
+        console.log(error);
+        setButtonText(3);
+        setTimeout(() => {
 
-    };
+          setButtonText(0);
+
+        }, 5000);
+      }
+    );
+	};
+
+  // Check to see what state the form is in and render the form dependent on it
+
+	if (buttonText === 0 || buttonText === 1) {
+		// Load the standard form ready for completion
+
+		return (
+
+			<div id="formWrapper">
+
+				<form ref={form} onSubmit={sendEmail}>
+
+					<h2>{ContactFormContent.title}</h2>
+          <hr />
+
+					<fieldset id="formArea">
+						<div id="formEntry">
+							<label className="userContactInfo">
+
+								<p>{ContactFormContent.name}</p>
+								<input name="user_name" onChange={setUserName} />
+
+							</label>
+
+							<label className="userContactInfo">
+
+								<p>{ContactFormContent.email}</p>
+								<input name="user_email" onChange={setUserEmail} />
+
+							</label>
+
+							<label className="userContactInfo">
+
+								<p>{ContactFormContent.phone}</p>
+								<input name="user_phone" />
+
+							</label>
+						</div>
+
+						<label id="messageContainer">
+
+							<p>{ContactFormContent.message}</p>
+							<textarea name="message" onChange={setUserMessage} />
+              
+						</label>
+					</fieldset>
+
+					<p>Please note that by submitting this form you agree to be contacted
+						by phone / email and agree that your data will be managed according
+						to the <Link to="/privacy-policy/#" target="_blank" className="linkOnPurple">Privacy Policy</Link></p>
+
+          <SubmitButton state={buttonText} />
+
+				</form>
+			</div>
+		);
+
+    // If the API response is OK, then display the success form
+	} else if (buttonText === 2) {
+
+    return <SubmittedForm />;
+
+    // If the API response is an Error, display the error message form
+  } else {
+
+    return <ErrorForm />;
+
+  };
 };
 
+/* The state codes are as follows:
+
+  0 is the initial render
+  1 is the waiting for error/success
+  2 is success
+  3 is error
+
+*/
