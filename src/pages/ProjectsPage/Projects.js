@@ -9,7 +9,7 @@ export const projects = [
         icon1: "bi bi-gear-fill animate-icon",
         tech1: "SquareSpace",
         icon2: "bi bi-envelope-check-fill",
-        tech2: "Lead Generating",
+        tech2: "Lead Gen",
         icon3: "bi bi-person-hearts",
         tech3: "Client",
         bgImg: "/assets/images/portfolio-meladore-developments-website.jpg"
@@ -53,7 +53,7 @@ export const projects = [
         icon1: "bi bi-gear-fill animate-icon",
         tech1: "Wix",
         icon2: "bi bi-envelope-check-fill",
-        tech2: "Leads",
+        tech2: "Lead Gen",
         icon3: "bi bi-person-hearts",
         tech3: "Client",
         bgImg: "/assets/images/portfolio-allclear-window-cleaning.jpg"
@@ -67,7 +67,7 @@ export const projects = [
         icon1: "bi bi-gear-fill animate-icon",
         tech1: "SquareSpace",
         icon2: "bi bi-envelope-check-fill",
-        tech2: "Lead Generating",
+        tech2: "Lead Gen",
         icon3: "bi bi-graph-up-arrow",
         tech3: "SEO",
         icon4: "bi bi-person-hearts",
@@ -113,7 +113,7 @@ export const projects = [
         icon1: "bi bi-wordpress animate-icon",
         tech1: "Wordpress",
         icon2: "bi bi-envelope-check-fill",
-        tech2: "Lead Generating",
+        tech2: "Lead Gen",
         icon3: "bi bi-filetype-css",
         tech3: "CSS",
         bgImg: "/assets/images/saleyha-ahsan.jpg"
