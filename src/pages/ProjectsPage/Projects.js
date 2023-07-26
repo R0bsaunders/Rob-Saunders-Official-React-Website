@@ -1,7 +1,7 @@
 export const projects = [
     // Each object contains the content for the projects pageXOffset. 
     {
-        id: 1,
+        id: 8,
         divId: "meladore",
         appLink: "https://www.meladoredevelopments.co.uk/",
         appName: "Meladore Developments",
@@ -15,7 +15,7 @@ export const projects = [
         bgImg: "/assets/images/portfolio-meladore-developments-website.jpg"
     },
     {
-        id: 1,
+        id: 7,
         divId: "countmykeywords",
         appLink: "https://countmykeywords.co.uk/",
         appName: "Free Keyword Counter",
@@ -30,7 +30,7 @@ export const projects = [
         bgImg: "/assets/images/portfolio-free-keyword-counter.jpg"
     },
     {
-        id: 2,
+        id: 6,
         divId: "fuel-calculator",
         appLink: "https://r0bsaunders.github.io/fuel-cost-and-sell-price-calculator-application/",
         appName: "Fuel Cost Calculator",
@@ -45,7 +45,7 @@ export const projects = [
         bgImg: "/assets/images/fuel-cost-calculator.png"
     },
     {
-        id: 1,
+        id: 5,
         divId: "cleaner",
         appLink: "https://www.allclear-windowcleaning.co.uk/",
         appName: "All Clear Window Cleaning",
@@ -90,7 +90,7 @@ export const projects = [
         bgImg: "/assets/images/app-screenshot.jpg"
     },
     {
-        id: 5,
+        id: 2,
         divId: "planner",
         appLink: "https://r0bsaunders.github.io/robs-javascript-powered-todo-daily-planner/",
         appName: "JavaScript To Do List",
@@ -105,7 +105,7 @@ export const projects = [
         bgImg: "/assets/images/todo-list.jpg"
     },
     {
-        id: 6,
+        id: 1,
         divId: "saleyha",
         appLink: "http://saleyhaa.sg-host.com/",
         appName: "Saleyha Ahsan Portfolio",

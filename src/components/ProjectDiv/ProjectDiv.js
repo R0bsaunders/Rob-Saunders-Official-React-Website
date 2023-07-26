@@ -9,7 +9,8 @@ function ProjectDiv(props) {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center'
-    }
+    };
+
 console.log(props);
     // Function to display a GitHub badge and link to repo only if one is present in the project.js file
     function checkGitHub(data) {
@@ -42,9 +43,9 @@ console.log(props);
         <div className="p-2">
             <div className="work-card card card-cover h-100 overflow-hidden text-bg-dark shadow-lg" style={redBackground} id={props.divId} >
 
-                <h3 className="mb-4 h3-portfolio">{props.appName}</h3>
+                <h3 className="fade-in mb-4 h3-portfolio">{props.appName}</h3>
 
-                <div id="card-description">
+                <div class="fade-in" id="card-description">
 
                     <p>{props.appDescription}</p>
 
@@ -56,7 +57,7 @@ console.log(props);
 
                 <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
 
-                    <ul className="work-ul d-flex list-unstyled mt-auto">
+                    <ul className="fade-in-two work-ul d-flex list-unstyled mt-auto">
 
                         <li className={liClass}>
                             <i className={props.icon1}></i>
