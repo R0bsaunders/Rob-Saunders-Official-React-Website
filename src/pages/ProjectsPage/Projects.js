@@ -2,17 +2,32 @@ export const projects = [
     // Each object contains the content for the projects pageXOffset. 
     {
         id: 1,
-        divId: "cleaner",
-        appLink: "https://www.allclear-windowcleaning.co.uk/",
-        appName: "All Clear Window Cleaning",
-        appDescription: "A single-page website was required for a client whose decade-old website only contained one image and was not ranking on Google at all. I used WIX to build a mobile-optimised webpage that now ranks on page one for window cleaners in Exeter",
+        divId: "meladore",
+        appLink: "https://www.meladoredevelopments.co.uk/",
+        appName: "Meladore Developments",
+        appDescription: "Offering all kinds of groundwork and plant-hire, this Cornwall based company had no online presence other than Facebook. They'd been quoted thousands by a web-agency to build a simple website. I used SquareSpace to create an affordable, simple and modern website in a fraction of the time and for a quarter of the cost.",
         icon1: "bi bi-gear-fill animate-icon",
-        tech1: "Wix",
+        tech1: "SquareSpace",
         icon2: "bi bi-envelope-check-fill",
-        tech2: "Leads",
-        icon3: "bi bi-graph-up-arrow",
-        tech3: "SEO",
-        bgImg: "/assets/images/portfolio-allclear-window-cleaning.jpg"
+        tech2: "Lead Generating",
+        icon3: "bi bi-person-hearts",
+        tech3: "Client",
+        bgImg: "/assets/images/portfolio-meladore-developments-website.jpg"
+    },
+    {
+        id: 1,
+        divId: "countmykeywords",
+        appLink: "https://countmykeywords.co.uk/",
+        appName: "Free Keyword Counter",
+        appDescription: "I custom coded a heavily JavaScript-based tool to display how many times a person's keywords are used within a given piece of text. I put the app online for free-use as I find it very useful and hope someone else too!",
+        icon1: "bi bi-tools animate-icon",
+        tech1: "Bespoke",
+        icon2: "bi bi-check-circle-fill",
+        tech2: "Practical",
+        icon3: "bi bi-github",
+        tech3: "GitHub",
+        github:"https://github.com/R0bsaunders/seo-keyword-counter",
+        bgImg: "/assets/images/portfolio-free-keyword-counter.jpg"
     },
     {
         id: 2,
@@ -30,19 +45,18 @@ export const projects = [
         bgImg: "/assets/images/fuel-cost-calculator.png"
     },
     {
-        id: 3,
-        divId: "weather",
-        appLink: "https://r0bsaunders.github.io/Interactive-5-day-weather-forecast/",
-        appName: "Weather forecast app",
+        id: 1,
+        divId: "cleaner",
+        appLink: "https://www.allclear-windowcleaning.co.uk/",
+        appName: "All Clear Window Cleaning",
         appDescription: "A single-page website was required for a client whose decade-old website only contained one image and was not ranking on Google at all. I used WIX to build a mobile-optimised webpage that now ranks on page one for window cleaners in Exeter",
-        icon1: "bi bi-link",
-        tech1: "API",
+        icon1: "bi bi-gear-fill animate-icon",
+        tech1: "Wix",
         icon2: "bi bi-envelope-check-fill",
-        tech2: "Dynamic",
-        icon3: "bi bi-github animate-icon",
-        tech3: "GitHub",
-        github: "https://github.com/R0bsaunders/Interactive-5-day-weather-forecast",
-        bgImg: "/assets/images/app-screenshot.jpg"
+        tech2: "Leads",
+        icon3: "bi bi-person-hearts",
+        tech3: "Client",
+        bgImg: "/assets/images/portfolio-allclear-window-cleaning.jpg"
     },
     {
         id: 4,
@@ -56,7 +70,24 @@ export const projects = [
         tech2: "Lead Generating",
         icon3: "bi bi-graph-up-arrow",
         tech3: "SEO",
+        icon4: "bi bi-person-hearts",
+        tech4: "Client",
         bgImg: "/assets/images/simon-tutty.jpg"
+    },
+    {
+        id: 3,
+        divId: "weather",
+        appLink: "https://r0bsaunders.github.io/Interactive-5-day-weather-forecast/",
+        appName: "Weather forecast app",
+        appDescription: "A single-page website was required for a client whose decade-old website only contained one image and was not ranking on Google at all. I used WIX to build a mobile-optimised webpage that now ranks on page one for window cleaners in Exeter",
+        icon1: "bi bi-link",
+        tech1: "API",
+        icon2: "bi bi-envelope-check-fill",
+        tech2: "Dynamic",
+        icon3: "bi bi-github animate-icon",
+        tech3: "GitHub",
+        github: "https://github.com/R0bsaunders/Interactive-5-day-weather-forecast",
+        bgImg: "/assets/images/app-screenshot.jpg"
     },
     {
         id: 5,

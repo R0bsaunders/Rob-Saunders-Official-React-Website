@@ -23,6 +23,19 @@ console.log(props);
         return data;
     };
 
+    function checkIcon4(data){
+        if(data ==="Client") {
+
+            return <li className={liClass}><i className={props.icon4}></i>
+            {props.tech4}
+        </li>
+
+        };
+
+        return data;
+
+    }
+
 
   return (
 
@@ -58,8 +71,9 @@ console.log(props);
                         <li className={liClass}>
                             <i className={props.icon3}></i>
                             {checkGitHub(props.tech3)}
+                            
                         </li>
-
+                        {checkIcon4(props.tech4)}
                     </ul>
                 </div>
             </div>
