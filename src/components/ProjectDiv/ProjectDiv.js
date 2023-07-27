@@ -6,9 +6,6 @@ const liClass = "d-flex align-items-center me-3";
 function ProjectDiv(props) {
     const redBackground={
         background: `url(${props.bgImg})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center'
     };
 
 console.log(props);
@@ -41,7 +38,7 @@ console.log(props);
   return (
 
         <div className="p-2">
-            <div className="work-card card card-cover h-100 overflow-hidden text-bg-dark shadow-lg" style={redBackground} id={props.divId} >
+            <div className="work-card card card-cover h-100 overflow-hidden text-bg-dark" style={redBackground} id={props.divId} >
 
                 <h3 className="fade-in mb-4 h3-portfolio">{props.appName}</h3>
 

@@ -206,10 +206,10 @@ a:hover {
 /* work Section */
 
 .work-card {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 65vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center;
+    min-height: 65vh !important;
     box-shadow: var(--bigBoxShadow);
 }
 
