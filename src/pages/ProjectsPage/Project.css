@@ -18,7 +18,7 @@ li .bi {
 }
 
 .fade-in {
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -36,15 +36,34 @@ li .bi {
 }
 
 .fade-in-two {
-    animation: fadeInAnimation ease 4s;
+    animation: fadeInAnimation2 ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
      
-@keyframes fadeInAnimation {
+@keyframes fadeInAnimation2 {
     0% {
         opacity: 0;
     }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        }
+}
+
+.fade-in-three {
+    animation: fadeInAnimation3 ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+     
+@keyframes fadeInAnimation3 {
+    0% {
+        opacity: 0;
+    }
+
     75% {
         opacity: 0;
     }

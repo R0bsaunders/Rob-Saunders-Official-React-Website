@@ -50,14 +50,14 @@ console.log(props);
                     <p>{props.appDescription}</p>
 
                     <a href={props.appLink} target="_blank">
-                        <button className="btn btn-project">View App</button>
+                        <button className="fade-in-two projectBTN">View App</button>
                     </a>
 
                 </div>
 
                 <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
 
-                    <ul className="fade-in-two work-ul d-flex list-unstyled mt-auto">
+                    <ul className="fade-in-three work-ul d-flex list-unstyled mt-auto">
 
                         <li className={liClass}>
                             <i className={props.icon1}></i>
