@@ -29,7 +29,6 @@ export default function ContactForm() {
 
     if (event.target.id === 'name') {
       setUserName(event.target.value);
-      console.log(userName)
 
     } else if (event.target.id === 'email'){
       setUserEmail(event.target.value);

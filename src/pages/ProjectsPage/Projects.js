@@ -104,18 +104,18 @@ export const projects = [
         github: "https://github.com/R0bsaunders/robs-javascript-powered-todo-daily-planner",
         bgImg: "/assets/images/todo-list.jpg"
     },
-    {
-        id: 1,
-        divId: "saleyha",
-        appLink: "http://saleyhaa.sg-host.com/",
-        appName: "Saleyha Ahsan Portfolio",
-        appDescription: "Saleyha is an incredible person and inspirational woman who was let down by her previous web-developer (an agency in London). I used WordPress and Elementor to create her a website that she manage herself and that looks modern and professional, reflecting on her own professionalism.",
-        icon1: "bi bi-wordpress animate-icon",
-        tech1: "Wordpress",
-        icon2: "bi bi-envelope-check-fill",
-        tech2: "Lead Gen",
-        icon3: "bi bi-filetype-css",
-        tech3: "CSS",
-        bgImg: "/assets/images/saleyha-ahsan.jpg"
-    },
+    // {
+    //     id: 1,
+    //     divId: "saleyha",
+    //     appLink: "http://saleyhaa.sg-host.com/",
+    //     appName: "Saleyha Ahsan Portfolio",
+    //     appDescription: "Saleyha is an incredible person and inspirational woman who was let down by her previous web-developer (an agency in London). I used WordPress and Elementor to create her a website that she manage herself and that looks modern and professional, reflecting on her own professionalism.",
+    //     icon1: "bi bi-wordpress animate-icon",
+    //     tech1: "Wordpress",
+    //     icon2: "bi bi-envelope-check-fill",
+    //     tech2: "Lead Gen",
+    //     icon3: "bi bi-filetype-css",
+    //     tech3: "CSS",
+    //     bgImg: "/assets/images/saleyha-ahsan.jpg"
+    // },
 ];
