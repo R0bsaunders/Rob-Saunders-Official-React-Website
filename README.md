@@ -20,7 +20,7 @@ Here is a screenshot of my app:
 ![Screenshot of Rob's React Portfolio](./public/assets/images/App-screenshot.png)
 
 ## Installation
-View the website here: https://r0bsaunders.github.io/rob-saunders-react-portfolio/#/ and view the repo here: https://github.com/R0bsaunders/rob-saunders-react-portfolio
+View the website here: https://www.rob-saunders.co.uk and view the repo here: https://github.com/R0bsaunders/rob-saunders-react-portfolio
 
 ## Usage
 Use this website and repo to see how far I have come in my journey to learn code.
