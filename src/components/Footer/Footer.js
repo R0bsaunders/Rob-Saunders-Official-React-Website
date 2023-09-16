@@ -10,7 +10,7 @@ function Footer() {
     <footer>
 
       <div>
-        <Link to="/#"><img alt="Rob Saunders Website Logo" src="./assets/images/rob-saunders-logo.png" /></Link>
+        <Link to="/#"><img alt="Rob Saunders Website Logo" src="./assets/images/rob-saunders-website-development-logo.png" /></Link>
         <p>{date} Copyright Rob Saunders</p>
         <Link to="/privacy-policy/#" className='linkOnPurple'>Privacy Policy</Link>
       </div>
