@@ -48,17 +48,26 @@ export const homepageContent = [
         
         {
             id: 6,
-            icon: "bi bi-filetype-jsx",
+            icon: "bi bi-emoji-smile",
             h3: "Customer-Focused",
             p: "I am a people person first, I am friendly and strive to build positive working relationships with everyone I meet"
+        },
+        
+        {
+            id: 7,
+            icon: "bi bi-box-fill",
+            h3: "Node.js",
+            p: "Server side rendering to enable feature-rich and powerful website functionality."
         }
     ],
 
     // Content for the about me section
     {
-        aboutH2: "About Me",
+        aboutH2: "About Me and my web-development service",
         image: "./assets/images/desktop-rob-saunders-profile-picture.jpg",
-        imageAlt: "A photograph of Rob Saunders",
-        aboutP: `I am a driven, self-motivated people-person who enjoys setting personal goals and striving to achieve them. Whilst I have a competitive nature, I am also a team player and use my drive and determination to motivate and empower my team or fellow team members. I am able to apply myself fully to a new role and learn quickly. I am loyal, dedicated, honest, and have excellent customer service skills.\nI genuinely enjoy getting to know people and building up a rapport with them and by using clear and easy to understand language, I help my clients to appreciate that having a website is not a big, scary or financially draining burden on their business, but is instead a fantastic tool that positively contributes to their goals and reputation`
+        imageAlt: "A photograph of Rob Saunders - website developer covering Somerset, Devon and Cornwall",
+        aboutP: "I live in beautiful Somerset but spent most of my life in Devon, on the edge of Dartmoor. Described as 'contagiously enthusiastic' by my close friends and colleagues, I'm a lover of the great outdoors, hiking and pushing myself!! Having worked in the website industry for over 5 years, I realised that small businesses, especially one-person bands, who often don't know where to start in their search for a website provider would be convinced to pay many times more than they need to for a website. They often fell prey to larger companies who see them as 'bread & butter' to pay for swanky offices and flashy equipment - used to impress larger clients. There is a place for these large companies, of course, but not necessarily for the tiny businesses who only need a 'Hi, here we are' website.",
+        aboutP2: "For this reason, I set about starting my own web development and SEO business especially for small business. I use tried and tested methods and platforms like Squarespace, Wix and Wordpress for simplicity. While the trade-off with this of course less functionality than a bespoke website, it's highly unlikely you need bespoke yet, so why pay for it?! I'll even use more more complex coding including JavaScript at no extra cost if it is needed, so that my website and SEO clients never need to go away and 'crunch the numbers' trying to afford my services. I charge enough to support my modest lifestyle while my clients are left feeling happy with themselves that they made a good choice, rather than wondering if it will be worth it in the long run.",
+        aboutP3: "I genuinely enjoy getting to know people and building up a rapport with them and by using clear and easy to understand language, I help my clients to appreciate that having a website is not a big, scary or financially draining burden on their business, but is instead a fantastic tool that positively contributes to their goals and reputation."
     },
 ];

@@ -21,6 +21,8 @@ function HomePage() {
         image={homepageContent[3].image}
         alt={homepageContent[3].imageAlt}
         p={homepageContent[3].aboutP}
+        p2={homepageContent[3].aboutP2}
+        p3={homepageContent[3].aboutP3}
       />
       
       <DevelopmentSkills />

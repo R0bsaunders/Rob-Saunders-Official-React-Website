@@ -9,7 +9,16 @@ function LeftImageBlock(props) {
         <div id="about-me">
 
             <img alt={props.alt} src={props.image}/>
-            <p>{props.p}</p>
+            <p>
+              {props.p}
+              <br />
+              <br />
+              {props.p2}
+              <br />
+              <br />
+              {props.p3}
+            </p>
+
             
         </div>
     </section>
