@@ -41,7 +41,7 @@ export const homepageContent = [
 
         {
             id: 5,
-            icon: "bi bi-filetype-jsx",
+            icon: "bi bi-flower3",
             h3: "REACT",
             p: "I can build single-page applications using REACT"
         },
