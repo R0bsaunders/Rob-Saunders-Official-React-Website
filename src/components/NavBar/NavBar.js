@@ -24,9 +24,6 @@ function NavBar() {
                 <Link to='/contact/#' className="nav-link">Contact</Link>
               </li>
 
-              <li className="nav-item">
-                <a className="btn btn-primary btn-lg navCTA" href={Pdf} target="_blank" role="button">My CV</a>
-              </li>
 
             </ul>
           </div>

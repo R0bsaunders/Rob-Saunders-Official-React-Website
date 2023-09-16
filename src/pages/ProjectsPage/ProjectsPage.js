@@ -18,9 +18,9 @@ function ProjectsPage() {
       <section id="work">
         <div className="container px-4 py-5" id="custom-cards">
 
-          <h2 className="pb-2 border-bottom">My Portfolio</h2>
+          <h2 className="pb-2 border-bottom">My Development and SEO Portfolio</h2>
 
-          <p>I absolutely LOVE coding and finding code-based solutions to real-world problems - something I have a good eye for. Here are a few of my web-development projects to date. They include websites I've built for clients using easy to use and maintain builders such as Squarespace and Wix, as well as my fully-bespoke custom line-by-line coded projects on the side:</p>
+          <p>I have developed (pardon the pun &#x1F606;) a LOVE for coding and finding code-based solutions to real-world problems - something I have a good eye for. Here are a few of my web-development projects to date. They include websites I've built for clients using easy to use and maintain builders such as Squarespace and Wix, as well as my fully-bespoke custom line-by-line coded projects on the side:</p>
             
           <div className="row row-cols-md-2 row-cols-lg-2 row-cols-xl-3 align-items-stretch g-4 py-5">
           
