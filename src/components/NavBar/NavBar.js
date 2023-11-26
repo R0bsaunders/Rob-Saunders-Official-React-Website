@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import Pdf from '../../files/Robert Saunders CV.pdf'
+import Pdf from '../../files/Robert Saunders Front-End Web Development CV.pdf'
 
 function NavBar() {
   return (
@@ -17,15 +17,19 @@ function NavBar() {
             <ul className="navbar-nav mr-auto">
 
               <li className="nav-item">
-                <Link to='/projects/#' className="nav-link">Projects</Link>
+                <Link to='/projects/#' className="nav-link">Development Projects</Link>
               </li>
 
               <li className="nav-item">
-                <Link to='/contact/#' className="nav-link">Contact</Link>
+                <Link to='/contact/#' className="nav-link">Contact Rob</Link>
               </li>
 
-
             </ul>
+
+            <a href={Pdf}>
+              <button className='btn btn-primary btn-lg navCTA'>Rob's CV</button>
+            </a>
+
           </div>
         </div>
       </nav>

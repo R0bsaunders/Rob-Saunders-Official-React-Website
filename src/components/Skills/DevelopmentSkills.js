@@ -9,7 +9,7 @@ function DevelopmentSkills() {
 
       <div className="container px-4 py-5" id="icon-grid">
 
-        <h2 className="pb-2 border-bottom" id="skills">Website Development Skills</h2>
+        <h2 className="pb-2 border-bottom" id="skills">{homepageContent[1].skillsH2}</h2>
         
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
 
