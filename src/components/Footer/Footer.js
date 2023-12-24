@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
 
@@ -10,9 +10,9 @@ function Footer() {
     <footer>
 
       <div>
-        <Link to="/#"><img alt="Rob Saunders Website Logo" src="./assets/images/rob-saunders-website-development-logo.png" /></Link>
+        <NavLink to="/"><img alt="Rob Saunders Website Logo" src="./assets/images/rob-saunders-website-development-logo.png" /></NavLink>
         <p>{date} Copyright Rob Saunders</p>
-        <Link to="/privacy-policy/#" className='linkOnPurple'>Privacy Policy</Link>
+        <NavLink to="/privacy-policy" className='linkOnPurple'>Privacy Policy</NavLink>
       </div>
 
       <div>
@@ -22,15 +22,15 @@ function Footer() {
         <ul className="nav flex-column">
 
           <li className="nav-item">
-            <Link to="/projects/#" className="nav-link footer-nav">Projects</Link>
+            <NavLink to="/projects" className="nav-link footer-nav">Projects</NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/#skills" className="nav-link footer-nav">My Skills</Link>
+            <NavLink to="/#skills" className="nav-link footer-nav">My Skills</NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/contact/#" className="nav-link footer-nav">Contact</Link>
+            <NavLink to="/contact" className="nav-link footer-nav">Contact</NavLink>
           </li>
 
         </ul>

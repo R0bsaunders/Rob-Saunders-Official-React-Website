@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { HashLink as Link } from "react-router-hash-link";
+import { NavLink } from 'react-router-dom';
 import SubmittedForm from "./SubmittedForm";
 import ErrorForm from "./ErrorForm";
 import SubmitButton from "./SubmitButton/SubmitButton";
@@ -221,7 +221,7 @@ export default function ContactForm() {
 
             <div>
 
-              <p>I accept that by submitting this form I agree to be contacted by phone / email and agree that my data will be managed according to the <Link to="/privacy-policy/#" target="_blank" className="linkOnPurple">Privacy Policy</Link></p>
+              <p>I accept that by submitting this form I agree to be contacted by phone / email and agree that my data will be managed according to the <NavLink to="/privacy-policy/#" target="_blank" className="linkOnPurple">Privacy Policy</NavLink></p>
 
               <label id="checkContainer" htmlFor="privacy">
 
