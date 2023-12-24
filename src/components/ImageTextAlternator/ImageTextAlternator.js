@@ -18,7 +18,6 @@ function TextImageAlternator(props) {
                     {props.p}
                     </p>
                     
-					<h2 id='contact-form'>{ContactFormContent.title}</h2>
                     <NavLink to='/contact#contact-form'>
                         <button className="btn btn-primary btn-lg navCTA mt-3 fade-in-three">
                             Let's Chat

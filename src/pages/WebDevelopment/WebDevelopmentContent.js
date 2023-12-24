@@ -7,7 +7,7 @@ export const WebDevelopmentContent = [
         position: 0
     },
     {
-        h2: "Save More of Your Hard-Earned Cash.",
+        h2: "Save More of Your Hard-Earned Cash",
         p: "I deliver a fast and fair web design service by building attractive fully functional budget websites using reliable and well-known web design platforms like Squarespace and WordPress. This approach means I build websites that don't break the bank, don't take forever to launch, and don't cost a small fortune to keep running. This is perfect for businesses working with a tight budget, need a quick turnaround or just need a website without getting tangled up with technical details.",
         image: "./assets/images/web-development-save-money.png",
         imageAlt: "A picture showing website JavaScript code on a laptop with an hourglass and piggy bank to depict saving time and money with Rob Saunders' web design service.",
@@ -24,7 +24,7 @@ export const WebDevelopmentContent = [
         h2: "Straight Talking and On Your Side",
         p: "Cutting out the fancy technical jargon, most small businesses, startups and one-person bands do not need elaborate, bespoke websites that cost a fortune with limited returns. I never use technical jargon or a condescending tone to 'scare' my clients into spending their hard-earned money on a service they don't need yet.",
         image: "./assets/images/web-design-on-your-side.png",
-        imageAlt: "Two hands shaking to show a spirit trust and cooperation",
+        imageAlt: "Two hands shaking to show a spirit of trust and cooperation",
         position: 1
     }
 ];

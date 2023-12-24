@@ -14,7 +14,7 @@ console.log(props);
 
         if(data ==="GitHub") {
 
-            return <a href={props.github} className="gitLink" target="_blank">{props.tech3} <i className="bi bi-box-arrow-up-right"></i></a>;
+            return <a href={props.github} className="gitLink" target="_blank" rel="noreferrer">{props.tech3} <i className="bi bi-box-arrow-up-right"></i></a>;
 
         };
 
@@ -46,7 +46,7 @@ console.log(props);
 
                     <p>{props.appDescription}</p>
 
-                    <a href={props.appLink} target="_blank">
+                    <a href={props.appLink} target="_blank" rel="noreferrer">
                         <button className="fade-in-two projectBTN">View App</button>
                     </a>
 
