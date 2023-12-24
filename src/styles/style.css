@@ -16,8 +16,13 @@
     --transparentWork: rgba(000, 000, 000, 0.8);
     --linkShadow: 2px 2px rgba(000,000,000, .55);
     --bigBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4) !important;
+    --smallBoxShadow: 0 4px 8px 0 rgba(69, 9, 116,0.15), 0 6px 20px 0 rgba(69, 9, 116,0.45) !important;
     --brandYellow: #F5D807;
     --brandYellowHover: #E4D77A;
+}
+
+.box-shadow {
+    box-shadow: var(--smallBoxShadow);
 }
 
 /* Text Styles */
@@ -334,6 +339,9 @@ footer img:hover {
 
 {
     /* Prevents jumbo copy from overlappging header on smaller screens */
+    .text-image-alternator {
+        display: none;
+    }
 
     .about-me p{
         margin-top: 10px;
