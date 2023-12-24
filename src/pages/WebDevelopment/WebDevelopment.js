@@ -15,7 +15,7 @@ function WebBuildPage() {
       />
 
       <section id="work">
-        <div className="container px-4 py-5" id="custom-cards">
+        <div className="container px-4 py-5">
 
         {WebDevelopmentContent.map(e => <TextImageAlternator 
                 h2={e.h2}
