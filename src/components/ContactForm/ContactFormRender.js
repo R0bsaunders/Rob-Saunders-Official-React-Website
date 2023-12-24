@@ -185,7 +185,7 @@ export default function ContactForm() {
 
 				<form ref={form} onSubmit={sendEmail}>
 
-					<h2 id='message'>{ContactFormContent.title}</h2>
+					<h2 id='contact-form'>{ContactFormContent.title}</h2>
           <hr />
 
 					<fieldset id="formArea">

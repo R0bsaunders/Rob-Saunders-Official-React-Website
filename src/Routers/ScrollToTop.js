@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 export default function ScrollToTop () {
   const location = useLocation();
-  const headerHeight = 50;
+  const headerHeight = 70;
 
   useEffect(() => {
 
