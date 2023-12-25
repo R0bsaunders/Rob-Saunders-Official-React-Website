@@ -4,11 +4,20 @@ import ProjectDiv from '../../components/ProjectDiv/ProjectDiv';
 import './Project.css';
 import { projects } from '../../pages/ProjectsPage/Projects';
 import { ProjectJumbo } from './ProjectJumbo';
-
+import { Helmet } from 'react-helmet';
+import {MetaData} from '../../MetaData/MetaData';
 
 function ProjectsPage() {
+  const meta = MetaData.projectPage
+
   return (
     <main>
+      <Helmet>
+        <title>{meta.page_title}</title>
+        <meta name="title" content={meta.title} />
+        <meta name="description" content={meta.meta_description} />
+
+      </Helmet>
 
       <Jumbotron 
         h1={ProjectJumbo.jumbotronH1}

@@ -2,12 +2,21 @@ import Jumbotron from '../../components/Jumbotron/Jumbotron';
 import { WebDevelopmentContent } from './WebDevelopmentContent';
 import { WebDevJumbo } from './WebDevJumbo';
 import TextImageAlternator from '../../components/ImageTextAlternator/ImageTextAlternator';
+import { Helmet } from 'react-helmet';
+import {MetaData} from '../../MetaData/MetaData'
 
 
 function WebBuildPage() {
-
+  const meta = MetaData.webDesignPage
+  
   return (
     <main>
+      <Helmet>
+        <title>{meta.page_title}</title>
+        <meta name="title" content={meta.title} />
+        <meta name="description" content={meta.meta_description} />
+
+      </Helmet>
 
       <Jumbotron 
         h1={WebDevJumbo.jumbotronH1}

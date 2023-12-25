@@ -3,11 +3,19 @@ import LeftImageBlock from '../../components/LeftImageBlock/LeftImageBlock';
 import Jumbotron from '../../components/Jumbotron/Jumbotron';
 import DevelopmentSkills from '../../components/Skills/DevelopmentSkills';
 import {homepageContent} from './HomePageContent';
+import {MetaData} from '../../MetaData/MetaData';
+import { Helmet } from 'react-helmet';
 
 function HomePage() {
+  const meta = MetaData.homepage
 
   return (
     <>
+      <Helmet>
+        <title>{meta.page_title}</title>
+        <meta name="title" content={meta.title} />
+        <meta name="description" content={meta.meta_description} />
+      </Helmet>
       <section id="hero">
 
         <Jumbotron

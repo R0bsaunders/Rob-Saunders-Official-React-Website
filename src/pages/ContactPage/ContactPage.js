@@ -1,17 +1,24 @@
 import React from "react";
 import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import { contactJumbo } from "./ContactJumbo";
-
+import { Helmet } from 'react-helmet';
 import printEmail from "../../components/EmailRevealer/EmailRevealer";
 import "./ContactPage.css";
 import ContactFormRender from "../../components/ContactForm/ContactFormRender";
+import { MetaData } from "../../MetaData/MetaData";
 
 
 function ContactPage() {
-
+  const meta = MetaData.contactPage
 
   return (
     <>
+      <Helmet>
+        <title>{meta.page_title}</title>
+        <meta name="title" content={meta.title} />
+        <meta name="description" content={meta.meta_description} />
+      </Helmet>
+
       <section id="hero">
         <Jumbotron h1={contactJumbo.jumbotronH1} p={contactJumbo.jumbotronP} />
       </section>
