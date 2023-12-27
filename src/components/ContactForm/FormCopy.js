@@ -1,6 +1,5 @@
 export const ContactFormContent =
     {
-        title: "Leave me a message and I'll come back to you ASAP",
         name: "Your Name: *",
         namePlaceholder: "*** Your Name Here ***",
         email: "Your email: *",

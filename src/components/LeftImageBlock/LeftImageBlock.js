@@ -5,7 +5,7 @@ function LeftImageBlock(props) {
     <section className="container" id="contact">
       <div className='row'>
         <h2 className="pb-5 pt-5 border-bottom">{props.h2}</h2>
-          <div className='col-md-4 col-sm-12 headshot-ctr'>
+          <div className='col-md-4 col-sm-12'>
             <img id='robs-headshot' alt={props.alt} src={props.image}/>
           </div>
 

@@ -205,6 +205,37 @@ a:hover {
     margin-bottom: 50px;
 }
 
+.page-break {
+    padding: 20px;
+    display: flex;
+    background-color: var(--transparentBackground);
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    box-shadow: var(--smallBoxShadow);
+}
+
+
+.page-break h2 {
+    color: var(--brandColor);
+    text-align: center;
+}
+
+.page-break-background {
+    padding: 25px 0;
+    margin-top: 25px;
+    background-color: var(--brandYellowHover);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.homepage-icons{
+    color: var(--brandColor);
+    margin-right: 10px;
+
+}
 
 /* work Section */
 
@@ -309,6 +340,10 @@ footer {
     align-items: center;
     text-align: center;
     color: white;
+}
+
+.hello-world {
+    color: #9880ff;
 }
 
 footer img {

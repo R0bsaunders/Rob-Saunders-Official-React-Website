@@ -7,7 +7,7 @@ import ErrorForm from "./ErrorForm";
 import SubmitButton from "./SubmitButton/SubmitButton";
 import { ContactFormContent } from "./FormCopy";
 
-export default function ContactForm() {
+export default function ContactForm(props) {
   // Error styles and messages
   const errorStyle = 'border: 3px solid red; border-radius: 5px; padding: 10px;'
 
@@ -23,6 +23,7 @@ export default function ContactForm() {
 	const templateID = "template_chkym13";
 	const publicKey = "4MtM6JCBoDqXoTUpX";
 	const form = useRef();
+  const source = props.source;
 
   // Filter the text entered by the user and update the respective state
   function inputListener (event) {
@@ -183,9 +184,10 @@ export default function ContactForm() {
 
 			<div id="formWrapper">
 
-				<form ref={form} onSubmit={sendEmail}>
-
-					<h2 id='contact-form'>{ContactFormContent.title}</h2>
+				<form id='contact-form' ref={form} onSubmit={sendEmail}>
+          <input type="hidden" value={source} name="source"/>
+          
+					<h2>{props.title}</h2>
           <hr />
 
 					<fieldset id="formArea">

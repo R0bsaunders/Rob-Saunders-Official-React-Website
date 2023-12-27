@@ -5,7 +5,7 @@ function Skill(props) {
 
     <div className="col d-flex align-items-start">
       
-      <i className={props.icon}></i>
+      <i className='homepage-icons'>{props.icon}</i>
 
       <div>
 

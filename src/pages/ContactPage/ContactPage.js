@@ -48,18 +48,6 @@ function ContactPage() {
             </a>
           </div>
 
-          <div className="contactCards">
-            <a href="https://github.com/R0bsaunders" target="_blank" rel="noreferrer">
-              <img
-                src="./assets/images/iconmonstr-github-2-72.png"
-                alt="GitHub Icon"
-              />
-            </a>
-
-            <a href="https://github.com/R0bsaunders" target="_blank" rel="noreferrer">
-              <p>GitHub</p>
-            </a>
-          </div>
         </div>
 
         <span id="contactEmailReveal" className="revealEmailSpan">
@@ -73,7 +61,10 @@ function ContactPage() {
         </span>
         <br />
 
-        <ContactFormRender />
+        <ContactFormRender 
+          title="Leave me a message and I'll come back to you ASAP"
+          source="Contact Page"
+        />
 
       </div>
     </>
