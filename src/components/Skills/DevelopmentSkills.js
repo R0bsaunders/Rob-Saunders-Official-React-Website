@@ -5,7 +5,7 @@ function DevelopmentSkills(props) {
 
   console.log(props.content);
   return (
-    <article id="skills">
+    <article id={props.id}>
 
       <div className="container px-4 py-5" id="icon-grid">
 

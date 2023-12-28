@@ -40,6 +40,7 @@ function HomePage() {
         <DevelopmentSkills 
           h2={homepageContent.uspsH2}
           content = {homepageContent.usps}
+          id="why-choose-rob"
         />
       </section>
 
@@ -68,8 +69,9 @@ function HomePage() {
 
 
       <DevelopmentSkills 
-      h2={homepageContent.skillsH2}
+        h2={homepageContent.skillsH2}
         content = {homepageContent.developmentSkills}
+        id="dev-skills"
       />
       <div className="page-break-background rockBackground">
 

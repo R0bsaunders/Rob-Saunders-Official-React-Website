@@ -17,12 +17,18 @@
     --linkShadow: 2px 2px rgba(000,000,000, .55);
     --bigBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4) !important;
     --smallBoxShadow: 0 4px 8px 0 rgba(69, 9, 116,0.15), 0 6px 20px 0 rgba(69, 9, 116,0.45) !important;
+    --yellowBoxShadow: 0 4px 8px 0 rgba(228, 215, 122,0.15), 0 6px 20px 0 rgba(228, 215, 122,0.65) !important;
     --brandYellow: #F5D807;
     --brandYellowHover: #E4D77A;
+    --purpleColorLight: #46097459;
 }
 
 .box-shadow {
     box-shadow: var(--smallBoxShadow);
+}
+
+.yellow-shadow {
+    box-shadow: var(--yellowBoxShadow);
 }
 
 /* Text Styles */
@@ -81,6 +87,10 @@ h1 {
     background-color: var(--brandColor);
     color: white !important;
     box-shadow: var(--linkShadow);
+}
+
+.purple-text {
+    color: var(--brandColor);
 }
 
 /* Project Button Style */
@@ -231,6 +241,17 @@ a:hover {
     justify-content: center;
 }
 
+.yellow-background{
+
+    background-color: var(--brandYellowHover);
+}
+
+.purple-background{
+
+    background-color: var(--purpleColorLight);
+}
+
+
 .homepage-icons{
     color: var(--brandColor);
     margin-right: 10px;
@@ -330,16 +351,34 @@ a:hover {
 }
 
 /* Footer Styles */
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
+#footer-wrapper {
     background-color: var(--brandColor);
-    padding: 25px;
-    justify-content: space-around;
-    align-items: center;
     text-align: center;
     color: white;
+
+}
+
+#footer-locations {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 100;
+
+
+}
+
+#footer-locations .nav-item {
+    font-size: 15px;
+
+}
+
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
 }
 
 .hello-world {
