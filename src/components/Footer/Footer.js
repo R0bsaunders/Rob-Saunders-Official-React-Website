@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Locations } from '../../Routers/Locations';
 
 function Footer() {
 
@@ -52,54 +53,16 @@ function Footer() {
         <strong>Web Design Locations</strong>
 
         <ul id="footer-locations" className="nav">
+          {Locations.map(e => {
+            return(
 
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-taunton" className="nav-link footer-nav">Web Design Taunton</NavLink>
-          </li>
+              <li key={e} className="nav-item">
+                <NavLink to={`/budget-web-design-${e}`} className="nav-link footer-nav">Web Design {e}</NavLink>
+              </li>
 
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-exeter" className="nav-link footer-nav">Web Design Exeter</NavLink>
-          </li>
 
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-bristol" className="nav-link footer-nav">Web Design Bristol</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-plymouth" className="nav-link footer-nav">Web Design Plymouth</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-devon" className="nav-link footer-nav">Web Design Devon</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-cornwall" className="nav-link footer-nav">Web Design Cornwall</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-somerset" className="nav-link footer-nav">Web Design Somerset</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-chard" className="nav-link footer-nav">Web Design Chard</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-truro" className="nav-link footer-nav">Web Design Truro</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-barnstaple" className="nav-link footer-nav">Web Design Barnstaple</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-ilminster" className="nav-link footer-nav">Web Design Ilminster</NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/budget-web-design-axminster" className="nav-link footer-nav">Web Design Axminster</NavLink>
-          </li>
+            )
+          })}
 
         </ul>
       </div>

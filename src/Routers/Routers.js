@@ -19,7 +19,7 @@ function Routers() {
             <Route path="/privacy-policy" element={<PrivacyPage />} />
             <Route path="/budget-web-design" element={<WebBuildPage />} />
 
-            {Locations.map(e => <Route path={`/budget-web-design-${e}`} element={<WebBuildPage location={e}/>} /> )}
+            {Locations.map(e => <Route key={e} path={`/budget-web-design-${e.toLocaleLowerCase()}`} element={<WebBuildPage location={e}/>} /> )}
 
         </Routes>
     );
