@@ -24,6 +24,9 @@ function Footer() {
           <strong>Where Next?</strong>
 
           <ul className="nav flex-column">
+            <li className="nav-item">
+              <NavLink to="/squarespace-web-designer-uk" className="nav-link footer-nav">Squarespace Web Design</NavLink>
+            </li>
 
             <li className="nav-item">
               <NavLink to="/budget-web-design" className="nav-link footer-nav">Affordable Website Design</NavLink>

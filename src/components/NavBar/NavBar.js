@@ -16,11 +16,15 @@ function NavBar() {
             <ul className="navbar-nav mr-auto">
 
               <li className="nav-item">
-                <NavLink to='/budget-web-design' className="nav-link">Web Design</NavLink>
+                <NavLink to='/squarespace-web-designer-uk' className="nav-link">Squarespace Websites</NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to='/projects' className="nav-link">Projects</NavLink>
+                <NavLink to='/budget-web-design' className="nav-link">Affordable Web Design</NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink to='/projects' className="nav-link">Portfolio</NavLink>
               </li>
 
               <li className="nav-item">

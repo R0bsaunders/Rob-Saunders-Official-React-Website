@@ -4,11 +4,17 @@ import TextImageAlternator from '../../components/ImageTextAlternator/ImageTextA
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 
+import ContactFormRender from "../../components/ContactForm/ContactFormRender";
 
 export default function WebBuildPage(props) {
-const location = () => {
-  return !props.location ? "" : "near "+props.location;
+const location = (data) => {
 
+  if(!data) {
+    return !props.location ? "" : "near "+props.location;
+
+  } else if(data === "contact") {
+    return !props.location ? "Interested " : "Near "+props.location+" and Interested ";
+  }
 };
   
   return (
@@ -38,22 +44,31 @@ const location = () => {
         )}
 
         </div>
-
-        <div className="page-break-background rockBackground">
-
-        <div id="content-box-4" className="page-break">
-
-          <h2>{!props.location ? "Somerset" : props.location} Web Development</h2>
-          <p>If you're in {props.location} & the Southwest looking for a developer to build you a simple website that looks modern, performs well and most importantly, your customers love, then get in touch with me now. I'm based in Chard, Somerset, and would love to come and see you, or have a video chat! I won't confuse you with technical words or try to sell you something you don't need.</p>
-
-          <NavLink to='/#contact-form'>
-              <button className="btn btn-primary btn-lg navCTA mt-3 fade-in-three">
-                  Let's Chat
-              </button>
-          </NavLink>
       
+      </section>
+
+      <section className="contactWrapper">
+        <ContactFormRender 
+          title={`Are You ${location("contact")} in Affordable Website Design?`}
+          source={!props.location ? "Web Development Page" : props.location+" Development Page"}
+        />
+      </section>
+
+      <section>
+          <div className="page-break-background rockBackground">
+            <div id="content-box-4" className="page-break">
+
+              <h2>{!props.location ? "Somerset" : props.location} Web Development</h2>
+              <p>If you're in {!props.location ? "" : props.location+" & "} the Southwest looking for a developer to build you a simple website that looks modern, performs well and most importantly, your customers love, then get in touch with me now. I'm based in Chard, Somerset, and would love to come and see you, or have a video chat! I won't confuse you with technical words or try to sell you something you don't need.</p>
+
+              <NavLink to='#contact-form'>
+                  <button className="btn btn-primary btn-lg navCTA mt-3 fade-in-three">
+                      Let's Chat
+                  </button>
+              </NavLink>
+          
+            </div>
         </div>
-      </div>
 
       </section>
     </main>

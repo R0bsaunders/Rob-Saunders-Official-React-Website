@@ -6,6 +6,7 @@ import ContactPage from '../pages/ContactPage/ContactPage';
 import PrivacyPage from '../pages/PrivacyPage/PrivacyPage';
 import WebBuildPage from '../pages/WebDevelopment/WebDevelopment';
 import {Locations} from './Locations';
+import SquarespacePage from '../pages/SquarespacePage/SquarespaceDevelopment';
 
 
 function Routers() {
@@ -18,8 +19,8 @@ function Routers() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPage />} />
             <Route path="/budget-web-design" element={<WebBuildPage />} />
-
-            {Locations.map(e => <Route key={e} path={`/budget-web-design-${e.toLocaleLowerCase()}`} element={<WebBuildPage location={e}/>} /> )}
+            <Route path="/squarespace-web-designer-uk" element={<SquarespacePage />} />
+            {Locations.map(e => <Route key={e} path={`/budget-web-design-${e.toLowerCase()}`} element={<WebBuildPage location={e}/>} /> )}
 
         </Routes>
     );

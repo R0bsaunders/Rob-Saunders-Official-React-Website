@@ -2,13 +2,17 @@ import { NavLink } from "react-router-dom";
 
 function TextImageAlternator(props) {
 
+  const link = () => {
+    return !props.link ? "#contact-form" : props.link+"/#contact-form";
+
+  }
 
     if (props.number === 0) {
         return (
             <section className="container mb-5 box-shadow yellow-background" >
               <div className='row'>
         
-                  <div className='col-md-4 col-sm-12 text-image-alternator p-0 '>
+                  <div style={{alignSelf : "center"}} className='col-md-4 col-sm-12 text-image-alternator p-0 '>
                     <img id='robs-headshot' alt={props.alt} src={props.image}/>
                   </div>
         
@@ -18,7 +22,7 @@ function TextImageAlternator(props) {
                     {props.p}
                     </p>
                     
-                    <NavLink to='/contact#contact-form'>
+                    <NavLink to={link()}>
                         <button className="btn btn-primary btn-lg navCTA mt-3 fade-in">
                             Let's Chat
                         </button>
@@ -40,13 +44,13 @@ function TextImageAlternator(props) {
                     <p className="fade-in">
                     {props.p}
                     </p>
-                    <NavLink to='/contact#contact-form'>
+                    <NavLink to={link()}>
                         <button className="btn btn-primary btn-lg navCTA mt-3 fade-in">
                             Let's Chat
                         </button>
                     </NavLink>
                   </div>
-                  <div className='col-md-4 col-sm-12 text-image-alternator p-0'>
+                  <div style={{alignSelf : "center"}} className='col-md-4 col-sm-12 text-image-alternator p-0'>
                     <img id='robs-headshot' alt={props.alt} src={props.image}/>
                   </div>
                 </div>
