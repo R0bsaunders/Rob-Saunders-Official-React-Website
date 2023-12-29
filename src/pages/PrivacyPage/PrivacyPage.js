@@ -1,6 +1,8 @@
 import React from "react";
 import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import printEmail from "../../components/EmailRevealer/EmailRevealer";
+import { Locations } from "../../Routers/Locations";
+import Sitemap from "../../components/SItemap/Sitemap";
 
 function PrivacyPage() {
   return (
@@ -600,6 +602,11 @@ function PrivacyPage() {
           </div>
         </div>
       </div>
+
+      {/* <div>
+        <Sitemap 
+        urls={Locations}/>
+      </div> */}
     </>
   );
 }
