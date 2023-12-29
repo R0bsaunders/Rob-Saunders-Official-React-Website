@@ -1,0 +1,18 @@
+export const Locations = [
+    "Axminster",
+    "Bath",
+    "Barnstaple",
+    "Bridgwater",
+    "Bristol",
+    "Chard",
+    "Cornwall",
+    "Devon",
+    "Exeter",
+    "Gloucestershire",
+    "Ilminster",
+    "Plymouth",
+    "Somerset",
+    "Taunton",
+    "Truro",
+    "Yeovil",
+]
