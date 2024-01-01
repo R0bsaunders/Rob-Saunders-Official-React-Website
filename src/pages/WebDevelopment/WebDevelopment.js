@@ -22,11 +22,11 @@ const location = (data) => {
       <Helmet>
         <title>Budget Friendly Web Design {location()} - Perfect for Small Businesses</title>
         <meta name="title" content={`Budget Friendly Web Design Service ${location()} - Perfect for Small Businesses<`} />
-        <meta name="description" content={`I provide small businesses ${location()} with great-looking fully functioning websites starting at just £500. Get a high-quality website that attracts customers and grows your business.`}/>
+        <meta name="description" content={`I provide small businesses ${location()} with great-looking fully functioning websites starting at just £600. Get a high-quality website that attracts customers and grows your business.`}/>
       </Helmet>
 
       <Jumbotron 
-        h1={`Budget Web Design ${location()} from £500 - perfect for small businesses!`}
+        h1={`Budget Web Design ${location()} from £600 - perfect for small businesses!`}
         p={`It is my goal to protect small businesses and owners alike, who only need a simple website, from expensive web agencies by providing a fast and fair value-for-money web design service.`}
       />
 

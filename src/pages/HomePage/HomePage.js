@@ -18,7 +18,10 @@ function HomePage() {
         <title>{meta.page_title}</title>
         <meta name="title" content={meta.title} />
         <meta name="description" content={meta.meta_description} />
+        <meta property="og:title" content={meta.og_title} />
+        <meta property="og:description" content={meta.og_description} />
       </Helmet>
+      
       <section id="hero">
 
         <Jumbotron
