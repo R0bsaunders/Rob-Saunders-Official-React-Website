@@ -15,7 +15,8 @@ export default function SquarespacePage() {
         <title>Budget Friendly Squarespace Website Design - Perfect for Small Businesses"</title>
         <meta name="title" content="Budget Friendly Squarespace Website Design - Perfect for Small Businesses" />
         <meta name="description" content="I'm a Squarespace web designer building professional and modern websites that your customers will love without breaking the bank! Get in touch now!" />
-      </Helmet>
+        <meta property="og:title" content="Budget Friendly SquareSpace Web Design | Rob Saunders" />
+        <meta property="og:description" content="Great looking, easy-to-use SquareSpace websites from £600" /> </Helmet>
 
       <Jumbotron 
         h1={SquarespaceJumbo.jumbotronH1}

@@ -7,14 +7,6 @@ export const MetaData = {
         og_title: "Rob Saunders | Web Developer & SEO in Somerset, Devon & Cornwall"
     },
 
-    webDesignPage: {
-        page_title: "Budget-friendly web design service - perfect for small businesses",
-        meta_title: "Budget-friendly web design service - perfect for small businesses",
-        meta_description: "I provide small businesses with great-looking fully functioning websites starting at just £600. Get a high-quality website that attracts customers and grows your business.",
-        og_description: "Great looking, easy-to-use SquareSpace websites from £600",
-        og_title: "Rob Saunders | Web Developer & SEO in Somerset, Devon & Cornwall"
-    },
-
     projectPage: {
         page_title: "Web Design & App Development Portfolio",
         meta_title: "Web Design & App Development by Rob Saunders",
