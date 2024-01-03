@@ -7,6 +7,33 @@ function TextImageAlternator(props) {
 
   }
 
+  const buttons = () => {
+
+    if(props.button === "none") {
+      return
+
+    } else if(props.buttonLink) {
+      return (
+        <NavLink target="_blank" rel="noreferrer" to="https://www.weglot.com/pricing">
+          <button className="btn btn-primary btn-lg navCTA mt-3 fade-in">
+              {props.buttonText}
+          </button>
+        </NavLink>
+
+      );
+    } else {
+      return (
+        <NavLink to={link()}>
+            <button className="btn btn-primary btn-lg navCTA mt-3 fade-in">
+                Let's Chat
+            </button>
+        </NavLink>
+      )
+    }
+
+
+  }
+
     if (props.number === 0) {
         return (
             <section className="container mb-5 box-shadow yellow-background" >
@@ -21,12 +48,7 @@ function TextImageAlternator(props) {
                     <p className="fade-in">
                     {props.p}
                     </p>
-                    
-                    <NavLink to={link()}>
-                        <button className="btn btn-primary btn-lg navCTA mt-3 fade-in">
-                            Let's Chat
-                        </button>
-                    </NavLink>
+                    {buttons()}
                   </div>
                 </div>
 
@@ -44,11 +66,7 @@ function TextImageAlternator(props) {
                     <p className="fade-in">
                     {props.p}
                     </p>
-                    <NavLink to={link()}>
-                        <button className="btn btn-primary btn-lg navCTA mt-3 fade-in">
-                            Let's Chat
-                        </button>
-                    </NavLink>
+                    {buttons()}
                   </div>
                   <div style={{alignSelf : "center"}} className='col-md-4 col-sm-12 text-image-alternator p-0'>
                     <img id='robs-headshot' alt={props.alt} src={props.image}/>

@@ -20,6 +20,8 @@ function HomePage() {
         <meta name="description" content={meta.meta_description} />
         <meta property="og:title" content={meta.og_title} />
         <meta property="og:description" content={meta.og_description} />
+        <meta property="og:url" content="https://www.rob-saunders.co.uk" />
+        <meta property="og:type" content="website" />
       </Helmet>
       
       <section id="hero">

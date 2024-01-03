@@ -14,7 +14,11 @@ const location = (data) => {
 
   } else if(data === "contact") {
     return !props.location ? "Interested " : "Near "+props.location+" and Interested ";
-  }
+
+  } else if(data === 'null') {
+    return !props.location ? "" : `-${props.location}`
+
+  };
 };
   
   return (
@@ -25,6 +29,8 @@ const location = (data) => {
         <meta name="description" content={`I provide small businesses ${location()} with great-looking fully functioning websites starting at just £600. Get a high-quality website that attracts customers and grows your business.`} />
         <meta property="og:title" content={`Budget Friendly Web Design Service ${location()}`} />
         <meta property="og:description" content="Great looking, easy-to-use SquareSpace websites from £600" />
+        <meta property="og:url" content={`https://www.rob-saunders.co.uk/budget-web-design${location('null')}`} />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <Jumbotron 

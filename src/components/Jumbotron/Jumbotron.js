@@ -10,6 +10,7 @@ function Jumbotron(data) {
 
             <h1>{data.h1}</h1>
             <p>{data.p}</p>
+            {!data.additionalHTML ? "" : <div id="google_translate_element"></div>}
             
         </div>
       </div>
