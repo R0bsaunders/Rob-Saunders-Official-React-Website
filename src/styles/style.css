@@ -76,6 +76,8 @@ h1 {
 }
 
 .btn-primary {
+    display: flex;
+    align-items: center;
     border-color: var(--brandColor);
     background-color: transparent;
     color: var(--brandColor);
@@ -456,6 +458,22 @@ footer img:hover {
 span button {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.button-chevron {
+    height: 25px;
+    animation: button-chevron 1s infinite linear;;
+}
+
+@keyframes button-chevron {
+    0%, 100% {
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(0.215,0.61,0.355,1);
+    }
+    50% {
+        transform: translateX(6px);
+        animation-timing-function: cubic-bezier(0.55,0.055,0.675,0.19);
+    }
 }
 
 /* Mobile Screens */

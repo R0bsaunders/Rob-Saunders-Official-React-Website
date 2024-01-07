@@ -15,8 +15,12 @@ function TextImageAlternator(props) {
     } else if(props.buttonLink) {
       return (
         <NavLink target="_blank" rel="noreferrer" to="https://www.weglot.com/pricing">
-          <button className="btn btn-primary btn-lg navCTA mt-3 fade-in">
-              {props.buttonText}
+          <button className="btn btn-primary btn-lg  mt-3 fade-in">
+              <span>{props.buttonText}</span>
+              <span>Let's Chat</span>
+                <svg className ="button-chevron" viewBox="0 0 1792 1792">
+                  <path fill="currentColor" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path>
+                </svg>
           </button>
         </NavLink>
 
@@ -24,8 +28,11 @@ function TextImageAlternator(props) {
     } else {
       return (
         <NavLink to={link()}>
-            <button className="btn btn-primary btn-lg navCTA mt-3 fade-in">
-                Let's Chat
+            <button className="btn btn-primary btn-lg mt-3 fade-in">
+                <span>Let's Chat</span>
+                <svg className ="button-chevron" viewBox="0 0 1792 1792">
+                  <path fill="currentColor" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path>
+                </svg>
             </button>
         </NavLink>
       )

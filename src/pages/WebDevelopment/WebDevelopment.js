@@ -58,7 +58,8 @@ const location = (data) => {
       <section className="contactWrapper">
         <ContactFormRender 
           title={`Are You ${location("contact")} in Affordable Website Design?`}
-          source={!props.location ? "Web Development Page" : props.location+" Development Page"}
+          source={!props.
+            location ? "Web Development Page" : props.location+" Development Page"}
         />
       </section>
 
@@ -70,9 +71,12 @@ const location = (data) => {
               <p>If you're in {!props.location ? "" : props.location+" & "} the Southwest looking for a developer to build you a simple website that looks modern, performs well and most importantly, your customers love, then get in touch with me now. I'm based in Chard, Somerset, and would love to come and see you, or have a video chat! I won't confuse you with technical words or try to sell you something you don't need.</p>
 
               <NavLink to='#contact-form'>
-                  <button className="btn btn-primary btn-lg navCTA mt-3 fade-in-three">
-                      Let's Chat
-                  </button>
+                <button className="btn btn-primary btn-lg mt-3 fade-in">
+                  <span>Let's Chat</span>
+                  <svg className ="button-chevron" viewBox="0 0 1792 1792">
+                    <path fill="currentColor" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path>
+                  </svg>
+                </button>
               </NavLink>
           
             </div>
