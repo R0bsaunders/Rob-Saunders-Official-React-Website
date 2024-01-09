@@ -40,15 +40,6 @@ function ProjectsPage() {
 
               appName={p.appName}
               appDescription={p.appDescription}
-              icon1={p.icon1}
-              tech1={p.tech1}
-              icon2={p.icon2}
-              tech2={p.tech2}
-              icon3={p.icon3}
-              tech3={p.tech3}
-              icon4={p.icon4}
-              tech4={p.tech4}
-              github={p.github}
               key={p.id} />)
             }
 
