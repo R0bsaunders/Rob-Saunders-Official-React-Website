@@ -8,8 +8,11 @@ import { Helmet } from 'react-helmet';
 import {MetaData} from '../../MetaData/MetaData';
 
 function ProjectsPage() {
-  const meta = MetaData.projectPage
+  const meta = MetaData.projectPage;
 
+  const filters = ["Squarespace", "SEO", "Wix", "JavaScript", "Bespoke"];
+  
+  
   return (
     <main>
       <Helmet>

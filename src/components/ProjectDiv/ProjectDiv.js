@@ -14,9 +14,9 @@ function ProjectDiv(props) {
   return (
 
         <div className="p-2">
-            <div className="work-card card card-cover h-100 overflow-hidden text-bg-dark" style={redBackground} id={props.divId} >
+            <div className="work-card card-cover overflow-hidden text-bg-dark" style={redBackground} id={props.divId} >
 
-                <div className="fade-in dashed-border" id="card-description">
+                <div className="fade-in" id="card-description">
 
                     <h3 className="fade-in mb-4 h3-portfolio">{props.appName}</h3>
                 

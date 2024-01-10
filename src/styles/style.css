@@ -18,7 +18,8 @@
     --bigBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4) !important;
     --smallBoxShadow: 0 4px 8px 0 rgba(69, 9, 116,0.15), 0 6px 20px 0 rgba(69, 9, 116,0.45) !important;
     --yellowBoxShadow: 0 4px 8px 0 rgba(228, 215, 122,0.15), 0 6px 20px 0 rgba(228, 215, 122,0.65) !important;
-    --brandYellow: #F5D807;
+    --largeHoverShadow: 0 0 40px 0 rgb(245, 216, 7) !important;
+    --brandYellow: rgb(245, 216, 7);
     --brandYellowHover: #E4D77A;
     --purpleColorLight: #46097459;
 }
@@ -102,16 +103,20 @@ h1 {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     border-radius: 0.3rem;
-    background-color: var(--brandYellow);
+    background-image: linear-gradient(var(--brandColorTextbox), var(--brandYellow));
     margin-top: 1em;
     margin-bottom: 1em;
+    box-shadow: var(--linkShadow);
+    transition: 400ms;
+    transform: scale(1);
     
 }
 
 .projectBTN:hover {
-    transition: 0.25s;
-    background-color: white;
-
+    background-image: linear-gradient(var(--brandYellow), var(--brandColorTextbox));
+    transition: 200ms;
+    transform: scale(1.03);
+    box-shadow: 0 0 35px 0 var(--brandColorTextbox);
 }
 
 /* Nav Bar */
@@ -264,12 +269,20 @@ a:hover {
 
 .work-card {
     background-repeat: no-repeat !important;
-    min-width: 30vh;
     background-size: cover !important;
     background-position: center center;
     min-height: 85vh !important;
     box-shadow: var(--bigBoxShadow);
     position: relative;
+    transition: 400ms;
+    transform: scale(1);
+
+}
+
+.work-card:hover {
+    box-shadow: var(--largeHoverShadow);
+    transition: 400ms;
+    transform: scale(1.02);
 
 }
 
