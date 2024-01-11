@@ -5,8 +5,8 @@ const iconSize = 30;
 
 export const homepageContent = {
 
-    jumbotronH1: "Building affordable websites in Somerset, Devon & Cornwall",
-    jumbotronP: "I'm a friendly freelance web developer in Somerset, UK. I build functional websites for small businesses so they can enjoy a professional online presence with minimal development and running costs.",
+    jumbotronH1: "Building Affordable Websites in Somerset, Devon & Cornwall",
+    jumbotronP: "I'm a friendly freelance web developer in Somerset, UK. I design and build functional websites for small businesses so they can enjoy a professional online presence with minimal development and running costs.",
 
     //Array containing USPs
     uspsH2: "Affordable Web Design Service",
@@ -103,7 +103,7 @@ export const homepageContent = {
 
     // Web design content box after the contact form
     contentBox3_Title: "Web Design in Somerset, Devon and Cornwall",
-    contentBox3_Para: "My website design, development and SEO service is specifically for small businesses (South West of England and beyond). I understand that many small businesses are run by an individual or individuals trying to balance the running of their business with personal life leaving little time for admin, especially a website. They don't have time for complicated proposals or techno jargon. They can fall prey to agencies who rely on a lack of website knowledge, or even a fear of tech, to scare their clients into spending a small fortune with them, convincing them they need more than they do. My service is no-thrills, no-nonsense and simple. Get in touch with me if you just want a website or a simple SEO service!",
+    contentBox3_Para: "My website design, development and SEO service is specifically for small businesses (South West of England and beyond). I understand that many small businesses are run by an individual or individuals trying to balance the running of their business with personal life leaving little time for admin, especially a website. They don't have time for complicated proposals or techno jargon. They can fall prey to some agencies who rely on a lack of website knowledge, or even a fear of tech, to scare their clients into spending a small fortune with them, convincing them they need more than they do. My service is no-thrills, no-nonsense and simple. Get in touch with me if you just want a website or a simple SEO service!",
 
     // Web design content box before the footer
     contentBox4_Title: "Why Choose a Freelance Web Designer?",

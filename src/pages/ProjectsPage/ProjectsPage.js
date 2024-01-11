@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Jumbotron from '../../components/Jumbotron/Jumbotron';
 import ProjectDiv from '../../components/ProjectDiv/ProjectDiv';
 import './Project.css';
 import { projects } from '../../pages/ProjectsPage/Projects';
-import { ProjectJumbo } from './ProjectJumbo';
 import { Helmet } from 'react-helmet';
 import {MetaData} from '../../MetaData/MetaData';
+import { ProjectContent } from './ProjectContent';
+import PageConclusion from '../../components/PageConclusion/PageConclusion';
+import ContactFormRender from "../../components/ContactForm/ContactFormRender";
+
 
 function ProjectsPage() {
   const meta = MetaData.projectPage;
@@ -59,42 +62,32 @@ function ProjectsPage() {
         <title>{meta.page_title}</title>
         <meta name="title" content={meta.title} />
         <meta name="description" content={meta.meta_description} />
-
       </Helmet>
 
       <Jumbotron 
-        h1={ProjectJumbo.jumbotronH1}
-        p={ProjectJumbo.jumbotronP}
+        h1={ProjectContent.h1}
+        p={ProjectContent.jumboP}
       />
 
       <section id="work">
         <div className="container px-4 py-5" id="custom-cards">
-
-          <h2 className="pb-2 border-bottom">My Development and SEO Portfolio</h2>
-
-          <p>I have developed (pardon the pun &#x1F606;) a LOVE for coding and finding code-based solutions to real-world problems - something I have a good eye for. Here are a few of my web-development projects to date. They include websites I've built for clients using easy to use and maintain builders such as Squarespace and Wix, as well as my fully-bespoke custom line-by-line coded projects on the side:</p>
-            
-
-                  <div className='filter-tags'>
-                    {filterTag.map(filter => {
-                        return(
-                          <button onClick={() => filterProjects(filter)} className={`filter-button uniformWidth ${filter===currentTag ? "filter-button-active" : ""}`}>
-                            <span>{filter}</span>
-                            {filter===currentTag ? <svg className ="filter-chevron" viewBox="0 0 1792 1792">
-                                <path fill="currentColor" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path>
-                            </svg> : ""}
-
-                          </button>
-
-                        )
-                      })
-                    }
-                  </div>
-
-
+          <h2 className="pb-2 border-bottom">{ProjectContent.topH2}</h2>
+          <p>{ProjectContent.topPara}</p>
+          <div className='filter-tags'>
+            {filterTag.map(filter => {
+                return(
+                  <button onClick={() => filterProjects(filter)} className={`filter-button uniformWidth ${filter===currentTag ? "filter-button-active" : ""}`}>
+                    <span>{filter}</span>
+                    {filter===currentTag ? 
+                    <svg xmlns="http://www.w3.org/2000/svg" className="filter-chevron" viewBox="0 0 329.26933 329"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+                   : ""}
+                  </button>
+                );
+              })
+            }
+          </div>
 
           <div className="row row-cols-md-2 row-cols-lg-2 row-cols-xl-3 align-items-stretch g-4 py-5">
-                    
             {filteredProjects.map( p => <ProjectDiv 
               divId={p.divId}
               bgImg={p.bgImg}
@@ -102,14 +95,26 @@ function ProjectsPage() {
               stateKey={currentTag}
               appName={p.appName}
               appDescription={p.appDescription}
-              key={p.id} />)
+              key={p.id} 
+              button={p.button}/>)
             }
-
           </div>
         </div>
       </section>
+
+      <section className="contactWrapper">
+        <ContactFormRender 
+          title="Can I help you with a new affordable website?"
+          source="Project Page"
+        />
+      </section>
+
+      <PageConclusion
+        h2={ProjectContent.concludingH2}
+        p = {ProjectContent.concludingPara}
+        button = {ProjectContent.concludingButton}
+      />
     </main>
-  
   );
 };
 

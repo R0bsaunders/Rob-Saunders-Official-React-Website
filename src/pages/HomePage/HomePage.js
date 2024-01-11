@@ -7,6 +7,7 @@ import {MetaData} from '../../MetaData/MetaData';
 import { Helmet } from 'react-helmet';
 import ContactFormRender from "../../components/ContactForm/ContactFormRender";
 import { NavLink } from 'react-router-dom';
+import PageConclusion from '../../components/PageConclusion/PageConclusion';
 
 
 function HomePage() {
@@ -82,24 +83,13 @@ function HomePage() {
         content = {homepageContent.developmentSkills}
         id="dev-skills"
       />
-      <div className="page-break-background rockBackground">
 
-        <div id="content-box-4" className="page-break">
-
-          <h2>{homepageContent.contentBox4_Title}</h2>
-          <p>{homepageContent.contentBox4_Para}</p>
-
-          <NavLink to='/#contact-form'>
-                <button className="btn btn-primary btn-lg mt-3 fade-in">
-                  <span>Let's Chat</span>
-                  <svg className ="button-chevron" viewBox="0 0 1792 1792">
-                    <path fill="currentColor" d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"></path>
-                  </svg>
-                </button>
-          </NavLink>
+      <PageConclusion
+        h2={homepageContent.contentBox4_Title}
+        p = {homepageContent.contentBox4_Para}
+        button = "Let's Chat"
+      />
       
-        </div>
-      </div>
     </>
   );
 };

@@ -8,13 +8,13 @@ export const MetaData = {
     },
 
     projectPage: {
-        page_title: "Web Design & App Development Portfolio",
-        meta_title: "Web Design & App Development by Rob Saunders",
-        meta_description: "Browse my web design and app development portfolio. Get in touch with me if you want to discuss your next project with me"
+        page_title: "Rob Saunders Web Design & Web App Development Portfolio",
+        meta_title: "Rob Saunders Web Design & Web App Development Portfolio",
+        meta_description: "Browse my web design and web app development portfolio. Get in touch with me if you want to discuss your next project with me"
     },
 
     contactPage: {
-        page_title: "Contact Rob Saunders",
+        page_title: "Get in touch to discuss your web design / development with me",
         meta_title: "Contact Rob Saunders",
         meta_description: "Get in touch with me now to discuss your website needs. I offer simple web design, web-development and SEO"
     }
