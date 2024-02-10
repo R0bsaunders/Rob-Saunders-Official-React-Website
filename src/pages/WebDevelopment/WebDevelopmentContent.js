@@ -1,9 +1,9 @@
 export const WebDevelopmentContent = [
     {
-        h2: "Fast, Low-Cost Web Design - without the stress!",
+        h2: "Fast, Low-Cost Web Design - Without The Stress and Worry!",
         p: "Drawing on over 6 years in the website industry, nearly 5 of which included working for a large website development agency in Somerset conceptualising and selling highly bespoke large websites as a Senior Account Manager, complimented by a further 9 years of customer-facing hospitality experience, to mutually beneficial relationship with my clients, I deliver a friendly, honest and efficient web design service. I 'work-to-live' and have no interest in ripping off people who are just trying to make an honest living. I'll hand over your new website leaving you feeling happy and proud to showcase it to your customers, rather than feeling stressed out and worrying about how you'll afford to keep it running!",
-        image: "./assets/images/rob-saunders-web-developer-2.jpg",
-        imageAlt: "Web designer and website developer rob saunders smiling whilst hiking the two moors way in Devon",
+        image: "./assets/images/rob-saunders-web-developer-3.jpg",
+        imageAlt: "Web designer and website developer rob saunders emerging from a wild like swim, smiling, having run 10 miles across wild Exmoor during the Man vs Moor 2023 race",
         position: 0
     },
     {

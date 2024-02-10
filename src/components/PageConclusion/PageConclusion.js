@@ -5,7 +5,7 @@ export default function PageConclusion(props) {
 
     return (
         <section>
-            <div className="page-break-background rockBackground">
+            <div className="page-break-background rockBackground wave">
 
                 <div id="content-box-4" className="page-break">
 

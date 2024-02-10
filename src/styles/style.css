@@ -58,6 +58,14 @@ h1 {
     color: var(--brandColor);
 }
 
+h2, h3 {
+    color: var(--brandColor);
+}
+
+form h2 {
+    color: white
+}
+
 .linkOnPurple {
     color: var(--brandGold) !important;
     text-decoration: underline;
@@ -379,7 +387,6 @@ a:hover {
 
 .h3-portfolio {
     text-align: center;
-    background-color: var(--titleBackground);
     color: white;
     padding: 5px;
 }

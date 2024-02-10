@@ -26,7 +26,7 @@ const location = (data) => {
       <Helmet>
         <title>Budget Friendly Web Design {location()} - Perfect for Small Businesses</title>
         <meta name="title" content={`Budget Friendly Web Design Service ${location()} - Perfect for Small Businesses`} />
-        <meta name="description" content={`I provide small businesses ${location()} with great-looking fully functioning websites starting at just £600. Get a high-quality website that attracts customers and grows your business.`} />
+        <meta name="description" content={`I provide small businesses ${location()} with great-looking fully functioning websites starting at just £600, jargon-free.`} />
         <meta property="og:title" content={`Budget Friendly Web Design Service ${location()}`} />
         <meta property="og:description" content="Great looking, easy-to-use SquareSpace websites from £600" />
         <meta property="og:url" content={`https://www.rob-saunders.co.uk/budget-web-design${location('null')}`} />

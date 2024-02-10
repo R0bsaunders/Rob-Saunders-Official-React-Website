@@ -1,11 +1,38 @@
 export const projects = [
     // Each object contains the content for the projects pageXOffset. 
- 
+
+    {
+        id: 13,
+        appLink: "",
+        appName: "Furley Cottages",
+        appDescription: "**Under Construction** Rebuild of a WordPress website on to an easier to manage and maintain Squarespace website",
+        bgImg: "/assets/images/furley-cottages.jpg",
+        tags: ["Squarespace"],
+        button: "Inactive"
+    },
+    {
+        id: 12,
+        appLink: "",
+        appName: "Sha-Zam Cleaning",
+        appDescription: "**Under Construction** A start up carpet and upholstery cleaning business needed an affordable, simple website and didn't know where to start",
+        bgImg: "/assets/images/sha-zam-carpet-cleaning.jpg",
+        tags: ["Squarespace"],
+        button: "Inactive"
+    },
+    {
+        id: 11,
+        appLink: "",
+        appName: "Reset Yoga",
+        appDescription: "**Under Construction** An experienced yoga teacher needed a new website specifically designed to attract a corporate client who are for their staff well-being",
+        bgImg: "/assets/images/reset-yoga.png",
+        tags: ["Squarespace"],
+        button: "Inactive"
+    },
     {
         id: 10,
-        appLink: "https://garlic-khaki-ly93.squarespace.com/",
+        appLink: "https://www.hoskinplant.co.uk/",
         appName: "T A Hoskin & Son",
-        appDescription: "**Under Construction** Another construction company based in Cornwall who had no online presence. I am building them a smart new website using Squaresapce",
+        appDescription: "Another construction company based in Cornwall who had no online presence. I am building them a smart new website using Squaresapce",
         bgImg: "/assets/images/TAHoskin.jpg",
         tags: ["Squarespace"],
         button: "View Website"
