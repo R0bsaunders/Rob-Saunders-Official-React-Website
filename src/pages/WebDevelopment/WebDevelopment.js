@@ -3,8 +3,10 @@ import { WebDevelopmentContent } from './WebDevelopmentContent';
 import TextImageAlternator from '../../components/ImageTextAlternator/ImageTextAlternator';
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
-
+import { projects } from '../../pages/ProjectsPage/Projects';
 import ContactFormRender from "../../components/ContactForm/ContactFormRender";
+import { WebDevJumbo } from './WebDevJumbo';
+import ProjectDiv from '../../components/ProjectDiv/ProjectDiv';
 
 export default function WebBuildPage(props) {
 const location = (data) => {
@@ -21,6 +23,23 @@ const location = (data) => {
   };
 };
   
+
+// Code to filter projects to web design only
+
+var filteredProjects = [];
+  const currentTag = "Squarespace";
+      
+  for (let i = 0; i < projects.length; i++) {
+    for (let j = 0; j < projects[i].tags.length; j++) {
+
+      if(projects[i].tags[j] === currentTag){
+        filteredProjects.push(projects[i]);
+
+      };
+
+    };
+  };
+
   return (
     <main>
       <Helmet>
@@ -53,6 +72,27 @@ const location = (data) => {
 
         </div>
       
+      </section>
+
+      <section id="work">
+        <div className="container px-4 py-5" id="custom-cards">
+          <h2 className="pb-2 border-bottom">{WebDevJumbo.topH2}</h2>
+          <p>I have designed and built websites for clients covering Somerset, Devon and Cornwall{!props.location ? "." : ` (so not too far from ${props.location}!).`} Distance is never a problem in our digital age. I love a phone call, video chat or an in person meeting if you really want it.</p>
+         
+
+          <div className="row row-cols-md-2 row-cols-lg-2 row-cols-xl-3 align-items-stretch g-4 py-5">
+            {filteredProjects.map( p => <ProjectDiv 
+              divId={p.divId}
+              bgImg={p.bgImg}
+              appLink={p.appLink}
+              stateKey={currentTag}
+              appName={p.appName}
+              appDescription={p.appDescription}
+              key={p.id} 
+              button={p.button}/>)
+            }
+          </div>
+        </div>
       </section>
 
       <section className="contactWrapper">
