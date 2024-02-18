@@ -1,20 +1,25 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Locations } from '../../Routers/Locations';
+import Accordion from '../Accordion/Accordion'; // Adjust the import path based on your file structure
+
 
 function Footer() {
 
   //Code to update the copyright year automatically
   let date =  new Date().getFullYear();
 
+
+
   return (
     <footer id="footer-wrapper">
       <h2 className="p-5">Affordable Websites for Small Businesses in Somerset, Devon & Cornwall</h2>
+      <img id='circle' alt="Squarespace Circle membership logo" src="./assets/images/CircleMemberColour.png" />
 
       <div id='footer' className='border-bottom'>
         <div>
 
-          <NavLink to="/"><img alt="Rob Saunders Website Logo" src="./assets/images/rob-saunders-website-development-logo.png" /></NavLink>
+          <NavLink to="/"><img id="footer-logo" alt="Rob Saunders Website Logo" src="./assets/images/rob-saunders-website-development-logo.png" /></NavLink>
           <p>{date} Copyright Rob Saunders</p>
           <NavLink to="/privacy-policy" className='linkOnPurple'>Privacy Policy</NavLink>
         </div>
@@ -52,8 +57,9 @@ function Footer() {
         </div>
       </div>
 
+      <div>
+      <Accordion title="Web Design Locations">
       <div className='mt-3'>
-        <strong>Web Design Locations</strong>
 
         <ul id="footer-locations" className="nav">
           {Locations.map(e => {
@@ -69,6 +75,9 @@ function Footer() {
 
         </ul>
       </div>
+      </Accordion>
+    </div>
+
     </footer>
   );
 };

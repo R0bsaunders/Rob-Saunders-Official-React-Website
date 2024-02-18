@@ -454,6 +454,7 @@ a:hover {
 #robs-headshot {
     object-fit: cover;
     width: 100%;
+    justify-self: center;
 }
 
 
@@ -494,11 +495,21 @@ a:hover {
     text-align: center;
 }
 
+footer h2 {
+    color: white !important;
+}
+
+footer #circle {
+    border-radius: 15px;
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+
 .hello-world {
     color: #9880ff;
 }
 
-footer img {
+#footer-logo{
     border: 1px solid white;
     margin-bottom: var(--tabletSpaceBetweenElements);
 }
@@ -516,7 +527,7 @@ footer img {
     box-shadow: 2px 2px rgba(000,000,000,.5);
 }
 
-footer img:hover {
+#footer-logo:hover {
     transition: 1s;
     transform: scale(1.25);
     box-shadow: 5px 10px rgba(000,000,000,.5);

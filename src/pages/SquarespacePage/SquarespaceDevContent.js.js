@@ -2,9 +2,9 @@
 export const SquarespaceDevContent = [
     {
         h2: "Squarespace Web Designer UK",
-        p: "Squarespace is a great-value website-building tool that can be used by small businesses to quickly create and maintain a professional online presence. It has a library of beautifully designed website templates to choose from (which can be modified to include client brand colours and content) so that visually appealing websites can be constructed at a fraction of the cost of a bespoke design agency. It boasts a wide range of features including website analytics, e-commerce capabilities, and search engine optimization tools. For simple websites and online shops, I use Squarespace because it keeps time, therefore costs, to a minimum, whilst balancing simplicity, quality, and functionality.",
-        image: "./assets/images/squarespace-logo-horizontal-black.jpg",
-        imageAlt: "The Squarespace website design company logo",
+        p: "I am a Squarespace Circle member which means I can give my Squarespace website customers 20% off their 1st year (annual plans) and get extended time to develop the website. Squarespace is a great-value website-building tool that can be used by small businesses to quickly create and maintain a professional online presence. It has a library of beautifully designed website templates to choose from (which can be modified to include client brand colours and content) so that visually appealing websites can be constructed at a fraction of the cost of a bespoke design agency. It boasts a wide range of features including website analytics, e-commerce capabilities, and search engine optimization tools. For simple websites and online shops, I use Squarespace because it keeps time, therefore costs, to a minimum, whilst balancing simplicity, quality, and functionality.",
+        image: "./assets/images/CircleMemberColour.png",
+        imageAlt: "Squarespace Circle membership logo - Rob Saunders is a Squarespace circle member allowing him to save his customers money",
         position: 0
     },
     {
