@@ -8,7 +8,8 @@ import WebBuildPage from '../pages/WebDevelopment/WebDevelopment';
 import {Locations} from './Locations';
 import SquarespacePage from '../pages/SquarespacePage/SquarespaceDevelopment';
 import RobHowardPage from '../pages/RobertHoward/RobHowardPage';
-import BlogPage from '../Blog/BlogPosts';
+import BlogPage from '../pages/Blog/BlogPage';
+import { BlogPosts } from '../pages/Blog/BlogPosts';
 
 
 function Routers() {
@@ -24,11 +25,11 @@ function Routers() {
             <Route path="/squarespace-web-designer-uk" element={<SquarespacePage />} />
             {Locations.map(e => <Route key={e} path={`/budget-web-design-${e.toLowerCase()}`} element={<WebBuildPage location={e}/>} /> )}
 
+            {/* Blog Page */}
+            {BlogPosts.map(e => <Route key={e} path={`/${e.url}`} element={<BlogPage blog={e}/>} /> )}
+
             {/* The below is an example page for Rob Howard to see Google translate in action */}
             <Route path="/rob-howard-translation-tool" element={<RobHowardPage />} />
-
-            {/* Blog Page */}
-            <Route path="/blog" element={<BlogPage />} />
 
         </Routes>
     );
