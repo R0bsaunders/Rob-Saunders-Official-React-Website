@@ -1,0 +1,93 @@
+blog-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+.blog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.post-content {
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+.quote {
+    font-style: italic;
+    background-color: #e9ecef;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-left: 4px solid var(--brandGold);
+    font-size: 1em;
+}
+
+
+.content {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-title, h2 {
+    margin-top: 0;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--brandSilver), #6c757d);
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.sidebar h3 {
+    color: black;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a:hover {
+    color: #ffc107 !important;
+}
+
+.sidebar ul li i {
+    color: var(--brandLightOrange);
+    margin-right: 10px;
+}

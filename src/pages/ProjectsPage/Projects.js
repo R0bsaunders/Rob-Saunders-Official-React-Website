@@ -3,16 +3,16 @@ export const projects = [
 
     {
         id: 13,
-        appLink: "",
+        appLink: "https://www.furleycottages.com/",
         appName: "Furley Cottages",
-        appDescription: "**Under Construction** Rebuild of a WordPress website on to an easier to manage and maintain Squarespace website",
-        bgImg: "/assets/images/furley-cottages.jpg",
+        appDescription: "Rebuild and optimisation of a WordPress website on an easier to manage and maintain Squarespace website.",
+        bgImg: "/assets/images/portfolio-squarespace-website-design-FurleyCottages.png",
         tags: ["Squarespace"],
-        button: "Inactive"
+        button: "View Website"
     },
     {
         id: 12,
-        appLink: "",
+        appLink: "https://www.reset-yoga.co.uk/",
         appName: "Sha-Zam Cleaning",
         appDescription: "**Under Construction** A start up carpet and upholstery cleaning business needed an affordable, simple website and didn't know where to start",
         bgImg: "/assets/images/sha-zam-carpet-cleaning.jpg",
@@ -23,10 +23,10 @@ export const projects = [
         id: 11,
         appLink: "",
         appName: "Reset Yoga",
-        appDescription: "**Under Construction** An experienced yoga teacher needed a new website specifically designed to attract a corporate client who are for their staff well-being",
-        bgImg: "/assets/images/reset-yoga.png",
+        appDescription: "An experienced yoga teacher needed a new website specifically designed to attract a corporate client who are for their staff well-being",
+        bgImg: "/assets/images/portfolio-squarespace-website-design-ResetYoga.png",
         tags: ["Squarespace"],
-        button: "Inactive"
+        button: "View Website"
     },
     {
         id: 10,

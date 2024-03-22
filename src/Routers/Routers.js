@@ -8,6 +8,7 @@ import WebBuildPage from '../pages/WebDevelopment/WebDevelopment';
 import {Locations} from './Locations';
 import SquarespacePage from '../pages/SquarespacePage/SquarespaceDevelopment';
 import RobHowardPage from '../pages/RobertHoward/RobHowardPage';
+import BlogPage from '../Blog/BlogPosts';
 
 
 function Routers() {
@@ -26,6 +27,8 @@ function Routers() {
             {/* The below is an example page for Rob Howard to see Google translate in action */}
             <Route path="/rob-howard-translation-tool" element={<RobHowardPage />} />
 
+            {/* Blog Page */}
+            <Route path="/blog" element={<BlogPage />} />
 
         </Routes>
     );

@@ -500,6 +500,7 @@ footer h2 {
 }
 
 footer #circle {
+    width: 50%;
     border-radius: 15px;
     background-color: #fff;
     margin-bottom: 25px;
@@ -510,6 +511,7 @@ footer #circle {
 }
 
 #footer-logo{
+    width: 50%;
     border: 1px solid white;
     margin-bottom: var(--tabletSpaceBetweenElements);
 }
