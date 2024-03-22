@@ -30,7 +30,7 @@ export default function BlogPage(props) {
                                     <div id="section2" className="post-content">
                                         <h2>{content.sectionTitle}</h2>
                                         <p>{content.paragraph}</p>
-                                        {!content.quote ? null : <div className="quote">{content.quote}</div>}
+                                        {!content.quote ? null : <div className="quote"><i class="fas fa-quote-left"></i>{content.quote}<i class="fas fa-quote-right"></i></div>}
                                     </div>
 
                                     {!content.image ? null : <img src={content.image} alt="Another Description of Image" className="post-image" />}

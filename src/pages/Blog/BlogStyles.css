@@ -35,13 +35,26 @@
 }
 .quote {
     font-style: italic;
-    background-color: #e9ecef;
+    background-color: var(--brandSkyBlueLight);
     padding: 10px 20px;
     margin: 20px 0;
-    border-left: 4px solid var(--brandGold);
+    border-left: 8px solid var(--brandGold);
     font-size: 1em;
+    text-align: left;
+    color: var(--brandColor)
 }
 
+.fa-quote-left {
+    margin-right: 8px;
+    color: var(--brandColor);
+    font-style: italic;
+}
+
+.fa-quote-right {
+    margin-left: 8px;
+    color: var(--brandColor);
+    font-style: italic;
+}
 
 .content {
     margin: 10px;
