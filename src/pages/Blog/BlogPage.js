@@ -6,7 +6,6 @@ console.log(BlogPosts);
 
 export default function BlogPage(props) {
 
-
     return (
         <>
             <Jumbotron 
@@ -21,7 +20,7 @@ export default function BlogPage(props) {
                         <div id="section1" className="post-content">
                             <p>{props.blog.postIntro}</p>
                         </div>
-
+                        
                         <img src={props.blog.introImage} alt="Rob hiking" className="post-image" />
                         
                         {props.blog.postContent.map(content => {
