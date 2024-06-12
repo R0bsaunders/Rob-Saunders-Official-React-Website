@@ -6,10 +6,22 @@
     scroll-behavior: smooth;
 }
 
+
 :root {
     --transparentBackground: rgba(255, 255, 255, 0.65);
     --brandColor: rgba(69, 9, 116,1);
     --brandColorLight: rgba(69, 9, 116,0.95);
+    --brandSkyBlue: rgba(58, 143, 183, 1);
+    --brandSkyBlueLight: rgba(58, 143, 183, .5);
+    --brandSilver: rgba(227, 227, 227, 1);
+    --brandLimeGreen: rgba(71, 148, 28);
+    --brandLimeGreenLight: rgba(74, 148, 28, .5);
+    --brandRed: rgba(174, 19, 47);
+    --brandBrightYellow: rgba(255, 255, 0, 1);
+    --brandSoftPink: rgba(215, 131, 190, 1);
+    --brandLightOrange: rgba(217, 113, 38);
+    --brandGold: rgba(244, 196, 48, 1);
+    
     --brandColorTextbox: #f1e2fd;
     --tabletSpaceBetweenElements: 25px;
     --titleBackground: rgba(69, 9, 116,0.8);
@@ -22,16 +34,8 @@
     --brandYellowHover: #E4D77A;
     --purpleColorLight: #46097459;
     --buttonShadow: 0 0 35px 0 var(--brandColorTextbox);
-    /* Brand Colours */
-    --brandSkyBlue: rgba(135, 206, 235, 1);
-    --brandSkyBlueLight: rgba(135, 206, 235, .5);
-    --brandSilver: rgba(192, 192, 192, 1);
-    --brandLimeGreen: rgba(50, 205, 50, 1);
-    --brandLimeGreenLight: rgba(50, 205, 50, .5);
-    --brandBrightYellow: rgba(255, 255, 0, 1);
-    --brandSoftPink: rgba(255, 182, 193, 1);
-    --brandLightOrange: rgba(255, 165, 0, 1);
-    --brandGold: rgb(255, 215, 0, 1);
+
+
 }
 
 .box-shadow {

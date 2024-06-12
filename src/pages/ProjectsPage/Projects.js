@@ -12,18 +12,18 @@ export const projects = [
     },
     {
         id: 12,
-        appLink: "https://www.reset-yoga.co.uk/",
+        appLink: "",
         appName: "Sha-Zam Cleaning",
-        appDescription: "**Under Construction** A start up carpet and upholstery cleaning business needed an affordable, simple website and didn't know where to start",
+        appDescription: "***Under Construction*** A start up carpet and upholstery cleaning business needed an affordable, simple website and didn't know where to start",
         bgImg: "/assets/images/sha-zam-carpet-cleaning.jpg",
         tags: ["Squarespace"],
         button: "Inactive"
     },
     {
         id: 11,
-        appLink: "",
+        appLink: "https://www.reset-yoga.co.uk/",
         appName: "Reset Yoga",
-        appDescription: "An experienced yoga teacher needed a new website specifically designed to attract a corporate client who are for their staff well-being",
+        appDescription: "An experienced yoga teacher needed a single-page website to attract a corporate client who are all for well-being of their staff",
         bgImg: "/assets/images/portfolio-squarespace-website-design-ResetYoga.png",
         tags: ["Squarespace"],
         button: "View Website"

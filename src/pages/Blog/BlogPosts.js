@@ -10,13 +10,13 @@ export const BlogPosts = [
         tags: ["Charity", "Running"],
         postContent: [
             {
-                sectionTitle: "How I'm transported",
+                sectionTitle: "How I'm transported Every Day",
                 paragraph: `When my fingers grace the piano keys, and my voice melds into the melody, I am transported to a realm where only the music and I exist." This immersive experience of playing the piano and singing is akin to speaking a universal language, one that transcends words and communicates directly to the soul. It's in these moments that I feel most alive, connected to something greater than myself, expressing emotions that words alone cannot convey.`,
                 quote: "playing the piano and singing is akin to speaking a universal language",
                 image: "./assets/images/BlogMedia/Music/two.webp"
             },
             {
-                sectionTitle: "How I'm transported",
+                sectionTitle: "How I'm transported again",
                 paragraph: `"There's a certain magic in the way music can capture the essence of our most profound experiences, encapsulating emotions in a melody that resonates with the heart." Through singing and playing the piano, I've found a powerful outlet for expression, a way to celebrate life's highs and navigate its lows. Each song becomes a diary entry, a musical snapshot of my life's most significant moments.`,
                 quote: `Each song becomes a diary entry`,
                 image: "https://placehold.co/600x400"

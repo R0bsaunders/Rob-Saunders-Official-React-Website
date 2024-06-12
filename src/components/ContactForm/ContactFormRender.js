@@ -193,37 +193,33 @@ export default function ContactForm(props) {
 					<fieldset id="formArea">
 						<div id="formEntry">
 							<label className="userContactInfo">
-
-								<p>{ContactFormContent.name}</p>
-								<input id="name" value={userName} name="user_name" onChange={inputListener} />
-
-							</label>
-
-							<label className="userContactInfo">
-
-								<p>{ContactFormContent.email}</p>
-								<input id="email" value={userEmail} name="user_email" onChange={inputListener} />
+					
+								<input id="name" value={userName} name="user_name" onChange={inputListener} placeholder={ContactFormContent.name}/>
 
 							</label>
 
 							<label className="userContactInfo">
 
-								<p>{ContactFormContent.phone}</p>
-								<input id="phone" value={userPhone} name="user_phone" onChange={inputListener}/>
+								<input id="email" value={userEmail} name="user_email" onChange={inputListener} placeholder={ContactFormContent.email} />
+
+							</label>
+
+							<label className="userContactInfo">
+
+								<input id="phone" value={userPhone} name="user_phone" onChange={inputListener} placeholder={ContactFormContent.phone} />
 
 							</label>
 						</div>
 
 						<label id="messageContainer">
 
-							<p>{ContactFormContent.message}</p>
-							<textarea id="message" value={userMessage} name="message" onChange={inputListener} />
+							<textarea id="message" value={userMessage} name="message" onChange={inputListener} placeholder={ContactFormContent.message} />
               
 						</label>
 
             <div>
 
-              <p>I accept that by submitting this form I agree to be contacted by phone / email and agree that my data will be managed according to the <NavLink to="/privacy-policy/#" target="_blank" className="linkOnPurple">Privacy Policy</NavLink></p>
+              <p id="disclaimer">I accept that by submitting this form I agree to be contacted by phone / email and agree that my data will be managed according to the <NavLink to="/privacy-policy/#" target="_blank" className="linkOnPurple">Privacy Policy</NavLink></p>
 
               <label id="checkContainer" htmlFor="privacy">
 

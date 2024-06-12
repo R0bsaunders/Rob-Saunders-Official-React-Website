@@ -51,6 +51,12 @@ textarea {
 
 }
 
+::placeholder {
+    color: black;
+    padding: 15px;
+
+}
+
 form h2 {
     margin: 35px 0;
 }
@@ -68,19 +74,37 @@ input {
     border-style: inset;
     box-shadow: 0 0 1px #fff, 0 0 2px #000;
     background-color: var(--brandColorTextbox);
+    opacity: 0.95;
 }
 
 #messageContainer {
     width: 100%;
+    opacity: 0.95;
 }
 
 form {
     width: 75%;
-    background-color: var(--brandColorLight);
+    background: url("/public/assets/images/contact-form-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     padding: 15px;
     box-shadow: var(--bigBoxShadow);
     margin-bottom: 20px;
+}
+
+#disclaimer {
+    margin-top: 25px;
+    background-color: var(--brandColor);
+    padding: 10px;
+    opacity: 0.95;
+}
+
+#checkContainer {
+    padding: 25px;
+    background-color: var(--brandColorTextbox);
+    color: black;
+    opacity: 0.95;
 }
 
 

@@ -7,8 +7,25 @@ import { projects } from '../../pages/ProjectsPage/Projects';
 import ContactFormRender from "../../components/ContactForm/ContactFormRender";
 import { WebDevJumbo } from './WebDevJumbo';
 import ProjectDiv from '../../components/ProjectDiv/ProjectDiv';
+import moment from 'moment';
 
 export default function WebBuildPage(props) {
+  // Work out the date of the week commencing three weeks from the current day
+    
+  function getDayNumberOfWeek(date) {
+    let day = date.getDay(); // Sunday - 0, Monday - 1, ..., Saturday - 6
+    return day === 0 ? 7 : day; // Convert Sunday from 0 to 7, keep other days as is
+}
+
+  const todaysDay = new Date();
+  const dayNumberOfWeek = getDayNumberOfWeek(todaysDay);
+
+  console.log("Today's number of the week (Monday as 1):", dayNumberOfWeek);
+
+  var today = new Date();
+  var priorDate = new Date(new Date().setDate(today.getDate() + (29-dayNumberOfWeek) ));
+
+  
 const location = (data) => {
 
   if(!data) {
@@ -56,6 +73,19 @@ var filteredProjects = [];
         h1={`Budget Web Design ${location()} from £600 - perfect for small businesses!`}
         p={`It is my goal to protect small businesses and owners alike, who only need a simple website, from expensive web agencies by providing a fast and fair value-for-money web design service.`}
       />
+
+<section id='notice' className='text-center mt-5 px-5'>
+        <div>
+          <h2 className='mb-3'>New website project start date - {moment(priorDate).format("dddd, MMMM Do YYYY")}</h2>
+
+          <p>Due to it being surprisingly busy at the moment, with several new website builds on the go, I am able to schedule in new website builds 3 weeks from the deposit payment. For example, if deposit is paid today then I would be able to schedule starting your project on the above date.</p>
+          <p>On a postive note, that gives you a bit more time to put pen to paper and write up your website content - oh how we love writing content haha!
+            <br />
+            Thanks, Rob
+          </p>
+        </div>
+
+      </section>
 
       <section id="work">
         <div className="container px-4 py-5">
