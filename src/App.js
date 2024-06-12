@@ -14,7 +14,7 @@ function App() {
         buttonText="Close"
         cookieName="myAwesomeCookieName2"
         style={{ background: "var(--brandColor" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "20px" }}
+        buttonStyle={{ background: "var(--brandGreen", color: "#4e503b", fontSize: "20px" }}
         expires={150}
       >
         <span style={{ fontSize: "16px" }}>

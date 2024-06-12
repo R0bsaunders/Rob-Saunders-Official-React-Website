@@ -1,7 +1,7 @@
 export const WebDevelopmentContent = [
     {
         h2: "Fast, Low-Cost Web Design - Without The Stress and Worry!",
-        p: "Drawing on over 6 years in the website industry, nearly 5 of which included working for a large website development agency in Somerset conceptualising and selling highly bespoke large websites as a Senior Account Manager, complimented by a further 9 years of customer-facing hospitality experience, to mutually beneficial relationship with my clients, I deliver a friendly, honest and efficient web design service. I 'work-to-live' and have no interest in ripping off people who are just trying to make an honest living. I'll hand over your new website leaving you feeling happy and proud to showcase it to your customers, rather than feeling stressed out and worrying about how you'll afford to keep it running!",
+        p: "Drawing on over 7 years in the website industry, nearly 5 of which included working for a large website development agency in Somerset conceptualising and selling highly bespoke large websites as a Senior Account Manager, complimented by a further 9 years of customer-facing hospitality experience, to mutually beneficial relationship with my clients, I deliver a friendly, honest and efficient web design service. I 'work-to-live' and have no interest in ripping off people who are just trying to make an honest living. I'll hand over your new website leaving you feeling happy and proud to showcase it to your customers, rather than feeling stressed out and worrying about how you'll afford to keep it running!",
         image: "./assets/images/rob-saunders-web-developer-3.jpg",
         imageAlt: "Web designer and website developer rob saunders emerging from a wild like swim, smiling, having run 10 miles across wild Exmoor during the Man vs Moor 2023 race",
         position: 0
@@ -22,9 +22,16 @@ export const WebDevelopmentContent = [
     },
     {
         h2: "Straight Talking and On Your Side",
-        p: "Cutting out the fancy technical jargon, most small businesses, startups and one-person bands do not need elaborate, bespoke websites that cost a fortune with limited returns. I never use technical jargon or a condescending tone to 'scare' my clients into spending their hard-earned money on a service they don't need yet.",
+        p: `I cut out the fancy technical jargon. Most small businesses, startups and one-person bands do not need elaborate, bespoke websites that cost a fortune with limited returns. I never use technical jargon or a condescending tone to 'scare' my clients into spending their hard-earned money on a service they don't need yet.`,
         image: "./assets/images/web-design-on-your-side.jpg",
         imageAlt: "Two hands shaking to show a spirit of trust and cooperation",
         position: 1
+    },
+    {
+        h2: "Who my web design service is suitable for",
+        p: `My service is perfect for Small Businesses, Start-Ups, One-person bands, and anyone who just needs a quick and professional online presence or functional shop without a need for multiple or meticulous design rounds and integrations. I am a web-developer and coder, but the majority of my clients simply don't need complex websites. I am not a graphic designer and I keep costs low by utilising templates which I customise (or build form scratch) and incorporate your own colours and logo etc.`,
+        image: "./assets/images/web-developer.webp",
+        imageAlt: "Wavy lines across a purple background",
+        position: 0
     }
 ];

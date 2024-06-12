@@ -21,7 +21,8 @@
     --brandSoftPink: rgba(215, 131, 190, 1);
     --brandLightOrange: rgba(217, 113, 38);
     --brandGold: rgba(244, 196, 48, 1);
-    
+    --brandGreen: rgba(172,200,188);
+
     --brandColorTextbox: #f1e2fd;
     --tabletSpaceBetweenElements: 25px;
     --titleBackground: rgba(69, 9, 116,0.8);
@@ -30,6 +31,7 @@
     --bigBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.4) !important;
     --smallBoxShadow: 0 4px 8px 0 rgba(69, 9, 116,0.15), 0 6px 20px 0 rgba(69, 9, 116,0.45) !important;
     --yellowBoxShadow: 0 4px 8px 0 rgba(228, 215, 122,0.15), 0 6px 20px 0 rgba(228, 215, 122,0.65) !important;
+    --greenBoxShadow: 0 4px 8px 0 rgba(172,200,188,0.85), 0 6px 20px 0 rgba(172,200,188,0.95) !important;
     --largeHoverShadow: 0 0 40px 0 var(--brandLightOrange) !important;
     --brandYellowHover: #E4D77A;
     --purpleColorLight: #46097459;
@@ -44,6 +46,10 @@
 
 .yellow-shadow {
     box-shadow: var(--yellowBoxShadow);
+}
+
+.green-shadow {
+    box-shadow: var(--greenBoxShadow);
 }
 
 /* Text Styles */
@@ -62,8 +68,14 @@ h1 {
     color: var(--brandColor);
 }
 
-h2, h3 {
+h2 {
     color: var(--brandColor);
+
+}
+
+.jumboCopy h3 {
+    font-size: 20px;
+
 }
 
 form h2 {
@@ -71,7 +83,7 @@ form h2 {
 }
 
 .linkOnPurple {
-    color: var(--brandGold) !important;
+    color: var(--brandGreen) !important;
     text-decoration: underline;
 }
 
@@ -100,6 +112,10 @@ form h2 {
     background-image: linear-gradient(var(--brandGold), var(--brandColorTextbox));
     box-shadow: var(--buttonShadow);
 
+}
+
+#notice {
+    margin-bottom: 15px !important;
 }
 
 .display-none {
@@ -323,7 +339,7 @@ a:hover {
 .page-break-background {
     padding: 25px 0;
     margin-top: 25px;
-    background-color: var(--brandYellowHover);
+    background-color: var(--brandGreen);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -332,6 +348,11 @@ a:hover {
 .yellow-background{
 
     background-color: var(--brandYellowHover);
+}
+
+.green-background{
+
+    background-color: var(--brandGreen);
 }
 
 .purple-background{
@@ -367,7 +388,7 @@ a:hover {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center center;
-    min-height: 75vh !important;
+    min-height: 60vh !important;
     box-shadow: var(--bigBoxShadow);
     position: relative;
     transition: 400ms ease-in;
@@ -404,7 +425,7 @@ a:hover {
     bottom: 0;
     border-radius: 40px 40px 0 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1), 5px 6px 25px 0 rgba(0, 0, 0, 1) !important;
-    min-height: 25vh !important;
+    min-height: 18vh !important;
 }
 
 #card-description p {
@@ -521,7 +542,7 @@ footer #circle {
 }
 
 .footer-nav {
-    color: var(--brandGold) !important;
+    color: var(--brandGreen) !important;
     text-decoration: underline;
 }
 
