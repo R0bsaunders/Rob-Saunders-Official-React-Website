@@ -3,7 +3,7 @@ import { WebDevelopmentContent } from './WebDevelopmentContent';
 import TextImageAlternator from '../../components/ImageTextAlternator/ImageTextAlternator';
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
-import { projects } from '../../pages/ProjectsPage/Projects';
+import { projects } from '../ProjectsPage/Projects';
 import ContactFormRender from "../../components/ContactForm/ContactFormRender";
 import { WebDevJumbo } from './WebDevJumbo';
 import ProjectDiv from '../../components/ProjectDiv/ProjectDiv';
@@ -37,7 +37,10 @@ const location = (data) => {
   } else if(data === 'null') {
     return !props.location ? "" : `-${props.location}`
 
-  };
+  } else if(data === 'place') {
+    return !props.location ? "" : `${props.location}`
+
+  }
 };
   
 
@@ -60,11 +63,11 @@ var filteredProjects = [];
   return (
       <main>
         <Helmet>
-          <title>Budget Friendly Web Design {location()} - Perfect for Small Businesses</title>
+          <title>&#9989; Budget Friendly Web Design {location()} - From £600!</title>
           <meta name="title"
-                content={`Budget Friendly Web Design Service ${location()} - Perfect for Small Businesses`}/>
+                content={`&#9989; Budget Friendly Web Design ${location()} - From £600`}/>
           <meta name="description"
-                content={`Get a new website for your small business ${location()} from just £600. You probably don't need an expensive agency website yet so get in touch.`}/>
+                content={`&#9989; I'm helping a growing number of small businesses get affordable websites with my simple web design service | ${location('place')}`}/>
           <meta property="og:title" content={`Budget Friendly Web Design Service ${location()}`}/>
           <meta property="og:description" content="Great looking, easy-to-use SquareSpace websites from £600"/>
           <meta property="og:url" content={`https://www.rob-saunders.co.uk/budget-web-design${location('null')}`}/>
@@ -73,7 +76,7 @@ var filteredProjects = [];
 
         <Jumbotron
             h1={`Budget Web Design ${location()} from £600 - perfect for small businesses!`}
-            p={`It is my goal to protect small businesses and owners alike, who only need a simple website, from expensive web agencies by providing a fast and fair value-for-money web design service.`}
+            p={`My web design service is perfect for tiny businesses, startups, and one-person business owners who have little time to arrange website stuff or feel intimidated by expensive agencies who see them as bread & butter and easy targets. Get in touch for a pleasant website experience.`}
         />
 
         <section id="work">

@@ -6,6 +6,7 @@ import CookieConsent from 'react-cookie-consent';
 function App() {
   return (
     <>
+        <div id={'background-container'}></div>
       <Routers />
       <NavBar />
       <Footer />
@@ -20,7 +21,7 @@ function App() {
         <span style={{ fontSize: "16px" }}>
         By continuing to use this site, you agree to its use of cookies. If you do not consent, please exit the website.{" "}
         </span>
-        <span style={{ fontSize: "12px" }}>This includes Google Analytics and LocalStorage to provide a smooth user-experience</span>
+        <span style={{ fontSize: "12px" }}>This includes Google Analytics and LocalStorage to provide a smooth user-experience - <a id='cookie-link' href="/privacy-policy">Privacy Policy</a></span>
       </CookieConsent>
     </>
   );

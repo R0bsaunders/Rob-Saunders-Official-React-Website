@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+
+}
 
 :root {
     --transparentBackground: rgba(255, 255, 255, 0.65);
@@ -36,8 +41,8 @@
     --brandYellowHover: #E4D77A;
     --purpleColorLight: #46097459;
     --buttonShadow: 0 0 35px 0 var(--brandColorTextbox);
-
-
+    --brandGreenLight: rgba(172,200,188, 0.2);
+    --purpleColorLighter: rgba(69, 9, 116,0.08);
 }
 
 .box-shadow {
@@ -52,6 +57,49 @@
     box-shadow: var(--greenBoxShadow);
 }
 
+#background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    pointer-events: none;
+
+}
+
+.background-image {
+    position: absolute;
+    background-image: url('../../public/assets/images/output.png');
+    background-size: cover;
+    width: 1025px; /* Adjust the size as needed */
+    height: 750px; /* Adjust the size as needed */
+    opacity: 0.07; /* Adjust the transparency as needed */
+    animation: move 10s infinite alternate, warp 30s infinite alternate;
+
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(10px, 100px);
+    }
+}
+
+@keyframes warp {
+    0% {
+        transform: scale(1) skew(0deg, 0deg);
+    }
+    50% {
+        transform: scale(1.015) skew(3deg, 6deg);
+    }
+    100% {
+        transform: scale(1) skew(0deg, 0deg);
+    }
+}
 /* Text Styles */
 
 p {
@@ -106,6 +154,10 @@ form h2 {
     
 }
 
+.header {
+    margin-top: 50px !important;
+
+}
 .onPurpleButton:hover {
     transform: scale(1.05);
     transition: 0.33s;
@@ -338,7 +390,6 @@ a:hover {
 
 .page-break-background {
     padding: 25px 0;
-    margin-top: 25px;
     background-color: var(--brandGreen);
     display: flex;
     align-content: center;
@@ -346,20 +397,59 @@ a:hover {
 }
 
 .yellow-background{
-
     background-color: var(--brandYellowHover);
+
+}
+
+/* Keyframes for sliding in from the right */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for sliding in from the right */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .green-background{
+    background-color: var(--brandGreenLight);
 
-    background-color: var(--brandGreen);
 }
 
 .purple-background{
-
-    background-color: var(--purpleColorLight);
+    background-color: var(--purpleColorLighter);
 }
 
+.slide-left {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+    background-color: white;
+
+}
+
+.slide-right {
+    animation: slideInFromRight 1s ease-in-out forwards;
+    opacity: 0;
+    background-color: white;
+}
+
+#cookie-link {
+    color: white !important;
+    text-decoration: underline;
+}
 
 .homepage-icons{
     color: var(--brandColor);
@@ -477,7 +567,8 @@ a:hover {
 
 
 #robs-headshot {
-    object-fit: cover;
+    object-fit: contain;
+    max-height: 65vh;
     width: 100%;
     justify-self: center;
 }

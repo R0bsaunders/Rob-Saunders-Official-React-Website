@@ -17,7 +17,7 @@ function PrivacyPage() {
         <div className="format-html">
           <div className="outputVersion1" data-exp="simple2">
             <div className="header">
-              <h2 className="content">Website Privacy Policy</h2>
+              <h2 >Website Privacy Policy</h2>
             </div>
 
             <p className="documentTitle">

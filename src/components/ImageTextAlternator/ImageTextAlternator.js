@@ -43,8 +43,8 @@ function TextImageAlternator(props) {
 
     if (props.number === 0) {
         return (
-            <section className="container mb-5 box-shadow green-background" >
-              <div className='row'>
+            <section className="container mb-5 box-shadow slide-right" >
+              <div className='row green-background'>
         
                   <div style={{alignSelf : "center"}} className='col-md-4 col-sm-12 text-image-alternator p-0 '>
                     <img id='robs-headshot' alt={props.alt} src={props.image}/>
@@ -58,15 +58,14 @@ function TextImageAlternator(props) {
                     {buttons()}
                   </div>
                 </div>
-
             </section>
         );
 
     } else if(props.number === 1){
 
         return (
-            <section key={props.location} className="container mb-5 green-shadow purple-background">
-              <div className='row'>
+            <section key={props.location} className="container mb-5 green-shadow slide-left">
+              <div className='row purple-background'>
 
                   <div className='col-md-8 col-sm-12 p-lg-5 p-md-4 p-3'>
                     <h2 className="mb-3 border-bottom purple-text">{props.h2}</h2>
@@ -75,7 +74,7 @@ function TextImageAlternator(props) {
                     </p>
                     {buttons()}
                   </div>
-                  <div style={{alignSelf : "center"}} className='col-md-4 col-sm-12 text-image-alternator p-0'>
+                  <div style={{alignSelf : "center"}} className='col-md-4 col-sm-12 text-image-alternator p-0 '>
                     <img id='robs-headshot' alt={props.alt} src={props.image}/>
                   </div>
                 </div>
