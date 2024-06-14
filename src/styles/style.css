@@ -9,6 +9,7 @@
 body {
     overflow-x: hidden;
     min-height: 100vh;
+    background-color: var(--purpleColorLighter);
 
 }
 
@@ -65,7 +66,6 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: -1;
-    pointer-events: none;
 
 }
 
@@ -73,33 +73,47 @@ body {
     position: absolute;
     background-image: url('../../public/assets/images/output.png');
     background-size: cover;
-    width: 1025px; /* Adjust the size as needed */
-    height: 750px; /* Adjust the size as needed */
-    opacity: 0.07; /* Adjust the transparency as needed */
-    animation: move 10s infinite alternate, warp 30s infinite alternate;
+    width: 800px; /* Adjust the size as needed */
+    height: 533px; /* Adjust the size as needed */
+    opacity: 0.1; /* Adjust the transparency as needed */
+    animation: warp 10s infinite alternate;
 
 }
 
-@keyframes move {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(10px, 100px);
-    }
+.background-image2 {
+    position: absolute;
+    background-image: url('../../public/assets/images/fractal-output.png');
+    background-size: cover;
+    width: 512px; /* Adjust the size as needed */
+    height: 512px; /* Adjust the size as needed */
+    opacity: 0.05; /* Adjust the transparency as needed */
+    animation: rotate 100s infinite alternate;
+
 }
+
 
 @keyframes warp {
     0% {
         transform: scale(1) skew(0deg, 0deg);
     }
     50% {
-        transform: scale(1.015) skew(3deg, 6deg);
+        transform: scale(1.03) skew(3deg, 1deg);
     }
     100% {
         transform: scale(1) skew(0deg, 0deg);
     }
 }
+
+@keyframes rotate {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(180deg);
+    }
+}
+
 /* Text Styles */
 
 p {

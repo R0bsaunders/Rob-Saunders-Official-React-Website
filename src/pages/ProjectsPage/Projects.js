@@ -2,11 +2,20 @@ export const projects = [
     // Each object contains the content for the projects pageXOffset. 
 
     {
+        id: 14,
+        appLink: "",
+        appName: "Tremaine Plant Hire",
+        appDescription: "***Under Construction*** Their web-provider went bust years ago with no handover. This is a rebuild using Squarespace",
+        bgImg: "/assets/images/tremaine-plant-hire.jpg",
+        tags: ["Squarespace"],
+        button: "Inactive"
+    },
+    {
         id: 13,
         appLink: "https://www.furleycottages.com/",
         appName: "Furley Cottages",
         appDescription: "Rebuild and optimisation of a WordPress website on an easier to manage and maintain Squarespace website.",
-        bgImg: "/assets/images/portfolio-squarespace-website-design-FurleyCottages.png",
+        bgImg: "/assets/images/portfolio-squarespace-website-design-FurleyCottages.jpg",
         tags: ["Squarespace"],
         button: "View Website"
     },

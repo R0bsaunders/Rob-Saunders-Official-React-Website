@@ -16,14 +16,14 @@ export const WebDevelopmentContent = [
     {
         h2: "Websites Designed For Your Customers",
         p: "I build websites that reflect the reputations of my clients and the high-quality work they do! I design each website with your customers in mind to ensure they get the information they need with little effort, and that they can get in touch with you in as few steps as possible.",
-        image: "./assets/images/mandelbrot islands.webp",
+        image: "./assets/images/wavey-line-art.jpg",
         imageAlt: "A laptop showing a graph in an upwards trend as Rob Saunders builds websites tailored to customer needs",
         position: 1
     },
     {
         h2: "Straight Talking and On Your Side",
         p: `I cut out the fancy technical jargon, am not intimidating and use simple systems so my website clients never feel ripped-off or put out. Most small businesses, startups and one-person bands do not need elaborate, bespoke websites that cost a fortune with limited returns. I never use technical jargon or a condescending tone to 'scare' my clients into spending their hard-earned money on a service they don't need yet.`,
-        image: "./assets/images/web-design-on-your-side.jpg",
+        image: "./assets/images/nebula.jpg",
         imageAlt: "Two hands shaking to show a spirit of trust and cooperation",
         position: 0
     },
