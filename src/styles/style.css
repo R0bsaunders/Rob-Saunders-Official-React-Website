@@ -91,7 +91,6 @@ body {
 
 }
 
-
 @keyframes warp {
     0% {
         transform: scale(1) skew(0deg, 0deg);
@@ -288,10 +287,6 @@ form h2 {
     height: 75px;
 }
 
-#mobile {
-    text-align: end;
-}
-
 li {
     padding: 10px;
     font-weight: 600;
@@ -326,39 +321,41 @@ a:hover {
 }
 
 .navbar-brand {
-    padding: 0px;
-    margin: 0px;
+    text-align: left;
 }
 
 .navbar {
-    z-index: 100;
+    z-index: 1;
     width: 100%;
     padding: 0px;
     background-image: linear-gradient(to top,
     rgba(255,255,255,0.3),
     rgba(255,255,255,1));
+    display:flex;
     justify-content: space-between;
 }
 
-.nav-item {
-    margin: 0px 15px;
+.navbar-collapse {
+    flex-grow: 0; /* Ensure it doesn't grow and push items out of view */
+    margin-right: 10px;
 }
 
 .nav-link:hover {
     border-color: black;
     border-radius: 5px;
-    transition: 0.5s;
-    background-color: var(--brandColor);
-    color: white !important;
+    transition: ease-in-out 0.5s ;
+    background-color: var(--brandGreen);
+    color: var(--brandColor) !important;
     box-shadow: var(--linkShadow);
 }
 
-.navbar-expand-lg {
-    align-items: flex-start;
+.navbar-white {
+    background-color: white;
 }
 
 .navbar-toggler {
-    background-color: #fff;
+    background-color: white;
+    margin-right: 10px;
 }
 
 /* Hero Section (Jumbotron) */
