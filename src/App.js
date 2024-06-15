@@ -6,9 +6,9 @@ import CookieConsent from 'react-cookie-consent';
 function App() {
   return (
     <>
-        <div id={'background-container'}></div>
-      <Routers />
-      <NavBar />
+        <NavBar />
+
+        <Routers />
       <Footer />
       <CookieConsent
         location="bottom"

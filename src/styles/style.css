@@ -322,17 +322,20 @@ a:hover {
 
 .navbar-brand {
     text-align: left;
+    padding-top: 0;
+}
+
+.navbar .container-fluid {
+    padding-left: 0;
+
 }
 
 .navbar {
     z-index: 1;
-    width: 100%;
     padding: 0px;
     background-image: linear-gradient(to top,
     rgba(255,255,255,0.3),
     rgba(255,255,255,1));
-    display:flex;
-    justify-content: space-between;
 }
 
 .navbar-collapse {
@@ -340,22 +343,16 @@ a:hover {
     margin-right: 10px;
 }
 
-.nav-link:hover {
-    border-color: black;
-    border-radius: 5px;
-    transition: ease-in-out 0.5s ;
-    background-color: var(--brandGreen);
-    color: var(--brandColor) !important;
-    box-shadow: var(--linkShadow);
-}
-
 .navbar-white {
     background-color: white;
 }
 
 .navbar-toggler {
-    background-color: white;
     margin-right: 10px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none!important;
 }
 
 /* Hero Section (Jumbotron) */
@@ -412,30 +409,6 @@ a:hover {
 
 }
 
-/* Keyframes for sliding in from the right */
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Keyframes for sliding in from the right */
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 .green-background{
     background-color: var(--brandGreenLight);
 
@@ -443,18 +416,6 @@ a:hover {
 
 .purple-background{
     background-color: var(--purpleColorLighter);
-}
-
-.slide-left {
-    animation: slideInFromLeft 1s ease-in-out forwards;
-    background-color: white;
-
-}
-
-.slide-right {
-    animation: slideInFromRight 1s ease-in-out forwards;
-    opacity: 0;
-    background-color: white;
 }
 
 #cookie-link {
@@ -627,7 +588,7 @@ footer h2 {
 }
 
 footer #circle {
-    width: 50%;
+    width: 200px;
     border-radius: 15px;
     background-color: #fff;
     margin-bottom: 25px;
