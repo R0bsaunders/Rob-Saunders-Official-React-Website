@@ -1,8 +1,8 @@
 export const MetaData = {
     homepage: {
         page_title: "Rob Saunders | Web Developer & SEO in Somerset, Devon & Cornwall",
-        meta_title: "Budget-friendly web design service - perfect for small businesses",
-        meta_description: "I'm a friendly web designer in Somerset building websites for small businesses from as little as £600. Get in touch now.",
+        meta_title: "Budget-friendly web design from £600 - Rob Saunders",
+        meta_description: "I'm a web designer in Somerset building simple low-cost websites for small businesses.",
         og_description: "Great looking, easy-to-use SquareSpace websites from £600",
         og_title: "Rob Saunders | Web Developer & SEO in Somerset, Devon & Cornwall"
     },
