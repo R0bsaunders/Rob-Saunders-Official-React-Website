@@ -51,7 +51,7 @@ export default function SquarespacePage() {
               <title>&#9989; Budget Friendly Squarespace Website Design - Perfect for Small Businesses"</title>
               <meta name="title" content="&#9989; Budget Friendly Squarespace Website Design - Perfect for Small Businesses"/>
               <meta name="description"
-                    content="&#9989; Get a new website for your small business at a fraction the cost of an design agency. I'm a UK Squarespace web designer with pricing from £600. Get in touch now!"/>
+                    content="&#9989; Get a Squarespace website for your small business in as little as 3 weeks. I'm a UK Squarespace web designer with pricing from £600"/>
               <meta property="og:title" content="Budget Friendly SquareSpace Web Design | Rob Saunders"/>
               <meta property="og:description" content="Great looking, easy-to-use SquareSpace websites from £600"/>
           </Helmet>

@@ -63,12 +63,12 @@ var filteredProjects = [];
   return (
       <main>
         <Helmet>
-          <title>&#9989; Budget Friendly Web Design {location()} - From £600!</title>
+          <title>Budget Friendly Web Design {location()} - From £600!</title>
           <meta name="title"
-                content={`&#9989; Budget Friendly Web Design ${location()} - From £600`}/>
+                content={`Budget Friendly Web Design, ${location('place')} - From £600`}/>
           <meta name="description"
-                content={`&#9989; I'm helping a growing number of small businesses get affordable websites with my simple web design service | ${location('place')}`}/>
-          <meta property="og:title" content={`Budget Friendly Web Design Service ${location()}`}/>
+                content={`My fast and affordable web design service ${location()} is perfect for small businesses! Get a low-cost website without the stress and worry!`}/>
+          <meta property="og:title" content={`Budget Friendly Web Design Service`}/>
           <meta property="og:description" content="Great looking, easy-to-use SquareSpace websites from £600"/>
           <meta property="og:url" content={`https://www.rob-saunders.co.uk/budget-web-design${location('null')}`}/>
           <meta property="og:type" content="website"/>
@@ -76,7 +76,7 @@ var filteredProjects = [];
 
         <Jumbotron
             h1={`Budget Web Design ${location()} from £600 - perfect for small businesses!`}
-            p={`My web design service is perfect for tiny businesses, startups, and one-person business owners who have little time to arrange website stuff or feel intimidated by expensive agencies who see them as bread & butter and easy targets. Get in touch for a pleasant website experience.`}
+            p={`My web design service is perfect for tiny businesses, startups, and one-person business owners who have little time to arrange website 'stuff' or feel intimidated by expensive agencies who see them as bread & butter and easy targets. Get in touch for a pleasant website experience.`}
         />
 
         <section id="work">
