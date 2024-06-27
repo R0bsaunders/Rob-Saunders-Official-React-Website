@@ -29,32 +29,33 @@ function NavBar() {
         },
     ];
 
-  return (
-      <nav className={`${isExpanded ? 'navbar-white' : ''} navbar fixed-top navbar-expand-lg`}>
-          <div className="container-fluid">
-              <NavLink to='/' className="navbar-brand"><img id="logoImg" src="/assets/images/rob-saunders-logo2.png"
-                                                            alt="Purple and white logo for Rob Saunders"/></NavLink>
-              <Button onClick={toggleMenu} aria-controls="navbarSupportedContent" aria-expanded="true"
-                      aria-label="Toggle navigation" className="navbar-toggler" data-bs-target="#navbarSupportedContent"
-                      data-bs-toggle="collapse" type="button">
-                  <Icon isExpanded={!isExpanded}>☰</Icon>
-                  <Icon isExpanded={isExpanded}>×</Icon>
-              </Button>
+    return (
+        <nav className={`${isExpanded ? 'navbar-white' : ''} navbar fixed-top navbar-expand-lg`}>
+            <div className="container-fluid">
+                <NavLink to='/' className="navbar-brand">
+                    <div id="logoWrapper">
+                        <img id='logoImg1' className="logoImg" src="/assets/images/rob-saunders-logo2.png" alt="Purple and white logo for Rob Saunders"/>
+                        <img id='logoImg2' className="logoImg" src="/assets/images/home-symbol.png" alt="Purple and white logo for Rob Saunders"/>
+                    </div>
+                </NavLink>
 
-              <div id="navbarSupportedContent" className="navbar-collapse collapse">
-                  <Menu className="navbar-nav me-auto ">
-                      {menuItems.map((item, index) => (
-                          <MenuItem key={item.path} delay={index * 150} className={'nav-item'}>
-                              <StyledNavLink to={item.path} className={'nav-link '} activeClassName="active">
-                                  {item.label}
-                              </StyledNavLink>
-                          </MenuItem>
-                      ))}
-                  </Menu>
-              </div>
-          </div>
-      </nav>
-  );
+                <Button onClick={toggleMenu} aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation" className="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                    <Icon isExpanded={!isExpanded}>☰</Icon>
+                    <Icon isExpanded={isExpanded}>×</Icon>
+                </Button>
+
+                <div id="navbarSupportedContent" className="navbar-collapse collapse">
+                    <Menu className="navbar-nav me-auto ">{
+                        menuItems.map((item, index) => (
+                            <MenuItem key={item.path} delay={index * 150} className={'nav-item'}>
+                                <StyledNavLink to={item.path} className={'nav-link '} activeClassName="active">{item.label}</StyledNavLink>
+                            </MenuItem>
+                        ))}
+                    </Menu>
+                </div>
+            </div>
+        </nav>
+);
 }
 
 const slideInBounce = keyframes`

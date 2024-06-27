@@ -21,12 +21,12 @@ export const projects = [
     },
     {
         id: 12,
-        appLink: "",
+        appLink: "https://sha-zam-carpetcleaning.co.uk",
         appName: "Sha-Zam Cleaning",
-        appDescription: "***Under Construction*** A start up carpet and upholstery cleaning business needed an affordable, simple website and didn't know where to start",
+        appDescription: "I made a new Squarespace website in a few weeks for a start up carpet cleaning business who needed an affordable, simple website.",
         bgImg: "/assets/images/sha-zam-carpet-cleaning.jpg",
         tags: ["Squarespace"],
-        button: "Inactive"
+        button: "View Website"
     },
     {
         id: 11,
