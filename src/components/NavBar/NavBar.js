@@ -35,7 +35,7 @@ function NavBar() {
                 <NavLink to='/' className="navbar-brand">
                     <div id="logoWrapper">
                         <img id='logoImg1' className="logoImg" src="/assets/images/rob-saunders-logo2.png" alt="Purple and white logo for Rob Saunders"/>
-                        <img id='logoImg2' className="logoImg" src="/assets/images/home-symbol.png" alt="Purple and white logo for Rob Saunders"/>
+                        <img id='logoImg2' className="logoImg" src="/assets/images/home-symbol1.png" alt="Purple and white logo for Rob Saunders"/>
                     </div>
                 </NavLink>
 
@@ -78,11 +78,11 @@ const slideInBounce = keyframes`
 `;
 const StyledNavLink = styled(NavLink)`
   display: block; /* Make the NavLink take full width */
-  color: inherit; /* Inherit the color for consistency */
   text-decoration: none; /* Remove underline */
   
   &.active {
     color: var(--brandSkyBlue) !important; /* Change the color of the active link */
+    text-decoration: underline;
   }
 
     &::before {
@@ -96,16 +96,19 @@ const StyledNavLink = styled(NavLink)`
         border-color: transparent;
         transition: border-color 0.5s ease;
         z-index: -1; /* Ensure the pseudo-element is behind the text */
+        
     }
 
     &:hover::before {
         border-color: purple;
         animation: drawBorder 1s forwards;
+        color: var(--brandSkyBlue) !important;
     }
 
     &:hover::after {
         border-color: purple;
         animation: drawBorder 1s backwards;
+        color: var(--brandSkyBlue) !important;
     }
 
     @keyframes drawBorder {
