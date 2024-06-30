@@ -8,6 +8,11 @@
     color: var(--brandColor) !important;
 }
 
+.form-control {
+    min-height: 50px;
+
+}
+
 #searchTermEntry {
     padding: 0 10px !important;
 

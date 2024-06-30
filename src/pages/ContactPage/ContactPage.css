@@ -2,7 +2,6 @@
 
 .contactWrapper {
     margin-top: 20px;
-    padding: 5px 20px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -31,11 +30,10 @@ label p {
 
 textarea {
     word-wrap: break-word;
-    word-break: break-all;
-    overflow: scroll;
+    padding: 5px;
     white-space: normal;
     min-height: 25vh;
-    width: 85%;
+    width: 95%;
     border: 2px solid var(--brandYellow);
     border-style: inset;
     box-shadow: 0 0 1px #fff, 0 0 2px #000;
@@ -45,7 +43,7 @@ textarea {
 #formEntry {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
     margin-bottom: 25px;
 
@@ -53,7 +51,6 @@ textarea {
 
 ::placeholder {
     color: black;
-    padding: 15px;
 
 }
 
@@ -67,6 +64,7 @@ flex-grow: 1;
 }
 
 input {
+    color: #000;
     padding: 10px 5px;
     width: 100%;
     border: none;
@@ -157,7 +155,7 @@ Media Query */
     }
 
     form h2 {
-        margin: 35px 15px;
+        margin: 20px 5px;
     }
 
     form p {
@@ -168,4 +166,10 @@ Media Query */
         margin: 0;
     }
 
+    .form-component {
+        width: 100%;
+        padding: 10px;
+
+    }
+    
 }

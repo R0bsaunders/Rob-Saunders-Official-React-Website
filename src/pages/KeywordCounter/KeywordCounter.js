@@ -143,6 +143,10 @@ function KeywordCounter() {
 
   const meta = MetaData.keyword_counter;
 
+  const input = {
+    color: 'black !important'
+  }
+
   return (
     <main>
       <Helmet>
@@ -161,17 +165,17 @@ function KeywordCounter() {
           <div className="col-sm-4 col-xs-12">
             <div id="keywordEntry" className="text-left text-lg-start">
               <form id="keywordForm" className="p-3 border rounded-1 bg-light" >
-                <div className="form-floating mb-3">
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control mb-3"
                     id="searchTermEntry"
                     name="search"
+                    style={input}
                     placeholder="Enter Keyword" 
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                   />
-                </div>
+
                 <button 
                   id="addData" className="w-100 btn seo-btn-primary btn-md"
                   onClick={(e) => addSearchTerm(e)}>
@@ -193,6 +197,7 @@ function KeywordCounter() {
                   className="form-control-md"
                   type="text"
                   rows="10"
+                  placeholder='Enter your copy here'
                   id="userData"
                   value={userCopy}
                   onChange={(e) => addUserCopy(e.target.value)}
