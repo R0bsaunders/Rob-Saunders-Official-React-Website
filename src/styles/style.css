@@ -349,7 +349,6 @@ form h2 {
 #logoWrapper {
     position: relative;
     height: 75px;
-    min-width: 125px;
 }
 
 .logoImg {
@@ -366,11 +365,14 @@ form h2 {
 #logoImg1 {
     opacity: 1;
     transform: rotate(0deg);
+    min-width: 125px;
 }
 
 #logoImg2 {
     opacity: 0;
     transform: rotate(-180deg);
+    min-width: 100px;
+
 }
 
 #logoWrapper:hover #logoImg1 {

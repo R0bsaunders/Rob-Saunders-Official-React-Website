@@ -10,6 +10,7 @@ import SquarespacePage from '../pages/SquarespacePage/SquarespaceDevelopment';
 import RobHowardPage from '../pages/RobertHoward/RobHowardPage';
 import BlogPage from '../pages/Blog/BlogPage';
 import { BlogPosts } from '../pages/Blog/BlogPosts';
+import KeywordCounterPage from '../pages/KeywordCounter/KeywordCounter';
 
 
 function Routers() {
@@ -30,6 +31,8 @@ function Routers() {
 
             {/* The below is an example page for Rob Howard to see Google translate in action */}
             <Route path="/rob-howard-translation-tool" element={<RobHowardPage />} />
+
+            <Route path='/keyword-usage-counter' element={<KeywordCounterPage />} />
 
         </Routes>
     );

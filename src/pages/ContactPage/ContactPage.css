@@ -82,7 +82,7 @@ input {
     opacity: 0.95;
 }
 
-form {
+.form-component {
     width: 75%;
     background: url("/public/assets/images/contact-form-background.webp");
     background-repeat: no-repeat;

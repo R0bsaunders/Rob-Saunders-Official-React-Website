@@ -1,0 +1,83 @@
+:root {
+    --brandColor: rgba(69, 9, 116, 1);
+    --brandColorOpaque: rgba(69, 9, 116,.5);
+}
+
+.h2 {
+    margin-bottom: 2vh !important;
+    color: var(--brandColor) !important;
+}
+
+#searchTermEntry {
+    padding: 0 10px !important;
+
+}
+
+#keywordForm {
+    background-color: rgba(76, 4, 94, 0.222) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow:2px 2px grey;
+    margin-bottom: 2vh;
+}
+
+.seo-btn-primary{
+    background-color: var(--brandColor) !important;
+    border: none !important;
+    box-shadow:2px 2px var(--brandColorOpaque);
+    color: white;
+}
+
+.seo-btn-primary:hover{
+    background-color: var(--brandColorOpaque) !important;
+    box-shadow:2px 2px var(--brandColor);
+}
+
+.btn-warning {
+    box-shadow:2px 2px var(--brandColorOpaque);
+}
+
+.remove i {
+    color: var(--brandColor);
+    transition: 0.3s ease-in-out;
+
+}
+
+.remove i:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+#userData {
+    justify-self: end;
+    width: 99%;
+}
+
+.seo-li {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-fill {
+    border-radius: 10px;
+    box-shadow:1px 1px black;
+    padding: 0.5rem 1rem;
+
+
+}
+
+#userData {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:1px 1px grey;
+    border-color: var(--brandColor) !important;
+}
+
+#recycle {
+    margin-left: 2vh;
+}
+
+#about {
+    margin-top: 5vh;
+}

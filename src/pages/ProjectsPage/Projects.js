@@ -75,12 +75,13 @@ export const projects = [
     },
     {
         id: 6,
-        appLink: "https://countmykeywords.co.uk/",
+        appLink: "/keyword-usage-counter",
         appName: "Free Keyword Counter",
         appDescription: "I custom coded a JavaScript-based tool to display how many times a person's keywords are used within a given piece of text. The tool is free to use",
         bgImg: "/assets/images/portfolio-free-keyword-counter.jpg",
         tags: ["JavaScript", "Custom-Code", "Free Tool"],
-        button: "View Website"
+        button: "View Website",
+        internal: true
     },
     {
         id: 5,

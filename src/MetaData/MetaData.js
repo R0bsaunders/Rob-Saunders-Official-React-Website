@@ -17,5 +17,12 @@ export const MetaData = {
         page_title: "Get in touch to discuss your web design / development with me",
         meta_title: "Contact Rob Saunders",
         meta_description: "Get in touch with me now to discuss your website needs. I offer simple web design, web-development and SEO"
+    },
+
+    keyword_counter: {
+        page_title: "Real-time keyword and phrase counter - updates as you type",
+        meta_title: "Real-time keyword and phrase counter - as you type",
+        meta_description: "Stop forgetting to use keywords or cramming in too many. This keyword counter makes it easy to see which words you have and have not used"
+
     }
 }

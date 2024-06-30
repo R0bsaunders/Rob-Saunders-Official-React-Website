@@ -184,7 +184,7 @@ export default function ContactForm(props) {
 
 			<div id="formWrapper">
 
-				<form id='contact-form' ref={form} onSubmit={sendEmail}>
+				<form id='contact-form' className="form-component" ref={form} onSubmit={sendEmail}>
           <input type="hidden" value={source} name="source"/>
           
 					<h2>{props.title}</h2>

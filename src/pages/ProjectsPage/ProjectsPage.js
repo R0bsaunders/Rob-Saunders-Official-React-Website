@@ -20,11 +20,13 @@ function ProjectsPage() {
   const filters = () => {
     projects.forEach(e => {
       for (let i = 0; i < e.tags.length; i++) {
-        filterTag.push(e.tags[i]);
-        filterTag = filterTag.filter((value, index) => filterTag.indexOf(value) === index);
+        filterTag.push(e.tags[i])
+        ;
       };
 
     });
+
+    filterTag = filterTag.filter((value, index) => filterTag.indexOf(value) === index);
 
   };
 
@@ -96,7 +98,8 @@ function ProjectsPage() {
               appName={p.appName}
               appDescription={p.appDescription}
               key={p.id} 
-              button={p.button}/>)
+              button={p.button}
+              blank={p.internal}/>)
             }
           </div>
         </div>
